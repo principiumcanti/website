@@ -2,6 +2,7 @@
     --primary-color: #f9c10a;
     --link-gray: #a0a0a0;
     --font-gray: #555;
+    --dark-gray: #333;
 }
 
 /* montserrat-regular - latin */
@@ -52,10 +53,26 @@
 
 html, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     font-family: Montserrat;
+    font-size: 14px;
+    color: var(--font-gray)
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color)
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--dark-gray);
+    text-transform: uppercase;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+    border: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
 }
 
 .navbar-brand {
@@ -64,29 +81,289 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 32px;
 }
 
+.nav-item {
+    font-weight: 600;
+    text-shadow: 1px 1px 5px white, -1px -1px 5px white;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+a.nav-link.active, .nav-link:hover {
+    color: var(--primary-color)!important;
+}
+
+.banner-image {
+    background-image: url("https://www.principiumcanti.de/wp-content/uploads/2018/04/Principium-Canti-Banner.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 2500 / 1401;
+}
+
+.banner-title {
+    font-family: 'Blacksword';
+    text-shadow: 1px 1px 10px black, -1px -1px 10px black !important;
+    font-size: 8vw!important;
+    text-transform: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #eee;
+    color: #000;
+    padding: 20px 30px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: 0;
+    width: auto;
+    line-height: 1;
+    height: auto;
+}
+
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
+    color: #000;
 }
 
 .btn-primary:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
+    color: #000;
 }
 
 a {
-    color: var(--link-gray)
+    color: var(--link-gray);
+    text-decoration-line: none;
 }
 
 a:hover {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
-.replace-h4 {
+.infobox-icon {
+    font-size: 50px;
+}
+
+.infobox-item {
+    color: var(--font-gray);
+}
+
+.infobox-title {
+    color: var(--primary-color);
     font-size: 20px;
     line-height: 1.1;
 }
 
-.feature-content {
-    color: var(--font-gray)
+.infobox-icon {
+    font-size: 50px;
+}
+
+.box-title {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--dark-gray);
+}
+
+.box-content {
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 1px 1px 10px 3px rgba(0,0,0,.1);
+}
+
+.fa-brands {
+    font-size: 22px;
+    text-shadow: 1px 1px 5px white, -1px -1px 5px white;
+    padding-right: 0px !important;
+}
+
+.fa-facebook-f {
+    color: #4267b2;
+}
+
+.fa-instagram {
+    color: #ed4855;
+}
+
+.fa-youtube {
+    color: #ff0000;
+}
+
+@media screen and (min-width: 992px) {
+    .box.left .box-content {
+        margin-left: -50px;
+    }
+    .box.right .box-content {
+        margin-right: -50px;
+    }
+    .box.left .box-figure {
+        margin-right: -50px;
+    }
+    .box.right .box-figure {
+        margin-left: -50px;
+    }
+    .box {
+        display: table;
+    }
+    .box-inner {
+        display: table-cell;
+        width: 50%;
+        height: 100%;
+        vertical-align: middle;
+        position: relative;
+    }
+    .box.right .box-inner:first-child {
+        z-index: 2;
+    }
+}
+
+ul[class*="list"] {
+    padding: 0;
+    margin: -15px;
+    list-style-type: none;
+    display: block;
+    clear: both;
+}
+
+ul[class*="list"]:before,
+ul[class*="list"]:after {
+    display: table;
+    content: " ";
+}
+
+ul[class*="list"]:after {
+    clear: both;
+}
+
+ul[class*="list"] > li {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding: 15px;
+    width: 100%;
+    display: block;
+}
+
+ul[class*="list"].full {
+    margin: 0;
+}
+
+ul[class*="list"].full > li {
+    padding: 0;
+}
+
+@media screen and (min-width: 992px) {
+    ul.list-md-1 > li {
+        width: 100%;
+    }
+    ul.list-md-2 > li {
+        width: 50%;
+    }
+    ul.list-md-3 > li {
+        width: 33.333333%;
+    }
+    ul.list-md-4 > li {
+        width: 25%;
+    }
+    ul.list-md-5 > li {
+        width: 20%;
+    }
+    ul.list-md-6 > li {
+        width: 16.666666%;
+    }
+
+    ul[class*="list-md"] > li:nth-of-type(n) {
+        clear: none;
+    }
+
+    ul.list-md-2 > li:nth-of-type(2n+3) {
+        clear: both;
+    }
+
+    ul.list-md-3 > li:nth-of-type(3n+4) {
+        clear: both;
+    }
+
+    ul.list-md-4 > li:nth-of-type(4n+5) {
+        clear: both;
+    }
+
+    ul.list-md-5 > li:nth-of-type(5n+6) {
+        clear: both;
+    }
+
+    ul.list-md-6 > li:nth-of-type(6n+7) {
+        clear: both;
+    }
+}
+
+
+/*text align fix*/
+ul[class*="list"].blog-list,
+ul[class*="list"].infobox-list,
+ul[class*="list"].concert-list {
+    text-align: center;
+    font-size: 0;
+}
+
+ul[class*="list"].blog-list > li,
+ul[class*="list"].infobox-list > li,
+ul[class*="list"].concert-list > li {
+    display: inline-block;
+    float:none;
+    vertical-align: top;
+    text-align: left;
+}
+
+.blog-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 10px 3px rgba(0,0,0,.1);
+}
+
+.blog-entry-category {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.blog-entry-title, .blog-entry-title > a {
+    color: var(--primary-color);
+    margin: 0 0 10px;
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+.blog-feature-img {
+    width: 100%;
+}
+
+.concert-item {
+    text-align: left;
+    background-color: #fff;
+    padding: 10px 20px 20px;
+    box-shadow: 1px 1px 10px 3px rgb(0 0 0 / 10%);
+}
+
+.concert-item-date {
+    font-size: 20px;
+    line-height: 1.1;
+    margin: 10px 0 12px;
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+.concert-item-title {
+    font-size: 20px;
+    line-height: 1.1;
+    margin: 20px 0 12px;
+    color: var(--dark-gray);
 }
