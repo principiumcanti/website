@@ -34,19 +34,19 @@
       <a class="navbar-brand" href="#">Principium Canti</a>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item mx-2">
-          <a class="nav-link active" aria-current="page" href="#">Start</a>
+          <a id="nav-link-start" class="nav-link active" aria-current="page" href="#">Start</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Über uns</a>
+          <a id="nav-link-ueber-uns" class="nav-link" href="#">Über uns</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Aktuelles</a>
+          <a id="nav-link-aktuelles" class="nav-link" href="#">Aktuelles</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Konzerte</a>
+          <a id="nav-link-konzerte" class="nav-link" href="#">Konzerte</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Kontakt</a>
+          <a id="nav-link-kontakt" class="nav-link" href="#">Kontakt</a>
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -65,12 +65,12 @@
 <!-- Banner -->
 <div class="banner-image d-flex justify-content-center align-items-center">
   <div class="text-center">
-    <h1 class="banner-title text-white">Principium Canti</h1>
+    <h1 id="banner-title" class="banner-title text-white">Principium Canti</h1>
 
   </div>
 </div>
 
-<div class="container">
+<div class="container-lg">
   <!-- Infoboxes -->
   <ul class="infobox-list list-md-2 my-5">
     <li>
@@ -104,7 +104,7 @@
     </div>
     <div class="box-inner">
       <div class="box-content">
-        <h2 class="box-title">Über uns</h2>
+        <h2 id="nav-ueber-uns" class="box-title">Über uns</h2>
         <div>Wir, Principium Canti, sind ein bunt zusammengewürfeltes, 13-köpfiges Männervokalensemble aus dem wunderschönen Sängerdorf Lindenholzhausen.
           <br><br>
           Nach unserer Gründung in einer lauen Spätsommernacht im Jahr 2015 fingen wir im Frühjahr 2016 mit unregelmäßigen Sonntagsproben an. Schnell stellten wir fest, dass uns die Probenarbeit Spaß macht, wir stimmlich gut zueinander passen und man mehr oder weniger den gleichen Musikgeschmack hat. Gründe genug für uns, nach und nach unser sowohl mit weltlich- als auch geistlichen Werken gespicktes Repertoire zu gestalten - ganz nach unserem eigenen Gusto.
@@ -119,7 +119,7 @@
   </div>
 
   <!-- Aktuelles -->
-  <h2 class="text-center">Aktuelles</h2>
+  <h2 id="nav-aktuelles" class="text-center">Aktuelles</h2>
   <ul class="blog-list list-md-3 my-4">
     <li class="blog-item">
       <img class="blog-feature-img" src="https://www.principiumcanti.de/wp-content/uploads/2019/12/Principium_Canti_Herborn_Weihnachtsmarkt.jpeg" alt="Principium_Canti_Herborn_Weihnachtsmarkt">
@@ -169,7 +169,7 @@
   </div>
 
   <!-- Konzerte -->
-  <h2 class="text-center">Konzerte</h2>
+  <h2 id="nav-konzerte" class="text-center">Konzerte</h2>
   <ul class="concert-list list-md-2 my-4">
     <li>
       <div class="concert-item">
@@ -231,7 +231,7 @@
     </div>
     <div class="box-inner">
       <div class="box-content">
-        <h2 class="box-title">Frag uns!</h2>
+        <h2 id="nav-kontakt" class="box-title">Frag uns!</h2>
         <div>
           <p>
             Wir sind offen für Fragen und Kritiken aller Art, auch Konzert- und Auftrittsanfragen nehmen wir gerne entgegen, melden Sie sich einfach.
@@ -260,9 +260,33 @@
   </div>
 
   <script>
+    console.log("Test");
+    console.log(window.innerWidth);
+
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+    }
+
+    function setActiveIfInViewport(queryselectorOfElementInViewport, queryselectorOfNavLink) {
+      if (isInViewport(document.querySelector(queryselectorOfElementInViewport))) {
+        navLinkList.forEach(navLink => navLink.classList.remove('active'));
+        document.querySelector(queryselectorOfNavLink).classList.add('active')
+      }
+    }
+
     const nav = document.querySelector('nav');
-    const navbarToggleButton = document.querySelector('#navbarToggleButton');
     const navbarToggler = document.querySelector('#navbarToggler');
+    const navLinkList = document.querySelectorAll('.nav-link');
+    let oldPosition = 0;
+    const minWidthNavExpandLg = 992;
+
+    function isMobileNavbar() {
+      return window.innerWidth < minWidthNavExpandLg;
+    }
 
     window.addEventListener('scroll', function (e){
       if(window.scrollY > 50 ){
@@ -270,6 +294,22 @@
       } else if (!navbarToggler.classList.contains('show')){
         nav.classList.remove('bg-light', 'shadow');
       }
+      if(window.scrollY - oldPosition > 0) {
+        setActiveIfInViewport('#banner-title', '#nav-link-start');
+        setActiveIfInViewport('#nav-ueber-uns', '#nav-link-ueber-uns');
+        setActiveIfInViewport('#nav-aktuelles', '#nav-link-aktuelles');
+        setActiveIfInViewport('#nav-konzerte', '#nav-link-konzerte');
+        setActiveIfInViewport('#nav-kontakt', '#nav-link-kontakt');
+      } else{
+        setActiveIfInViewport('#nav-kontakt', '#nav-link-kontakt');
+        setActiveIfInViewport('#nav-konzerte', '#nav-link-konzerte');
+        setActiveIfInViewport('#nav-aktuelles', '#nav-link-aktuelles');
+        setActiveIfInViewport('#nav-ueber-uns', '#nav-link-ueber-uns');
+        setActiveIfInViewport('#banner-title', '#nav-link-start');
+      }
+
+      oldPosition = window.scrollY;
+
     });
 
     /*navbarToggleButton.addEventListener('click', function (e){

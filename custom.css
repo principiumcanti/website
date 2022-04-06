@@ -53,7 +53,7 @@
 
 html, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 1rem;
     color: var(--font-gray)
 }
 
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: var(--dark-gray);
     text-transform: uppercase;
 }
@@ -77,13 +77,14 @@ img {
 
 .navbar-brand {
     font-family: Blacksword;
-    text-shadow: 1px 1px 5px white, -1px -1px 5px white;
-    font-size: 32px;
+    text-shadow: 0.1rem 0.1rem 0.5rem white, -0.1rem -0.1rem 0.5rem white;
+    font-size: 2rem;
 }
 
 .nav-item {
     font-weight: 600;
-    text-shadow: 1px 1px 5px white, -1px -1px 5px white;
+    font-size: 1.25rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white, -0.1rem -0.1rem 0.5rem white;
 }
 
 .navbar-toggler {
@@ -106,7 +107,7 @@ a.nav-link.active, .nav-link:hover {
 
 .banner-title {
     font-family: 'Blacksword';
-    text-shadow: 1px 1px 10px black, -1px -1px 10px black !important;
+    text-shadow: 0.1rem 0.1rem 0.8rem black, -0.1rem -0.1rem 0.8rem black !important;
     font-size: 8vw!important;
     text-transform: none;
 }
@@ -118,8 +119,8 @@ a.nav-link.active, .nav-link:hover {
     padding: 20px 30px;
     border-radius: 100px;
     text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
     border: 0;
     width: auto;
     line-height: 1;
@@ -148,7 +149,7 @@ a:hover {
 }
 
 .infobox-icon {
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 .infobox-item {
@@ -157,16 +158,12 @@ a:hover {
 
 .infobox-title {
     color: var(--primary-color);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.1;
 }
 
-.infobox-icon {
-    font-size: 50px;
-}
-
 .box-title {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: var(--dark-gray);
 }
@@ -174,12 +171,12 @@ a:hover {
 .box-content {
     background-color: #fff;
     padding: 50px;
-    box-shadow: 1px 1px 10px 3px rgba(0,0,0,.1);
+    box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgba(0,0,0,.1);
 }
 
 .fa-brands {
-    font-size: 22px;
-    text-shadow: 1px 1px 5px white, -1px -1px 5px white;
+    font-size: 1.25rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white, -0.1rem -0.1rem 0.5rem white;
     padding-right: 0px !important;
 }
 
@@ -195,7 +192,12 @@ a:hover {
     color: #ff0000;
 }
 
+/* Large */
 @media screen and (min-width: 992px) {
+    :root{
+        font-size: 16px;
+    }
+
     .box.left .box-content {
         margin-left: -50px;
     }
@@ -222,6 +224,31 @@ a:hover {
         z-index: 2;
     }
 }
+
+/* Medium */
+@media screen and (max-width: 991px) {
+    :root{
+        font-size: 24px;
+    }
+}
+
+/* Small */
+@media screen and (max-width: 767px) {
+    :root{
+        font-size: 32px;
+    }
+}
+
+/* Extra small */
+@media screen and (max-width: 575px) {
+    :root{
+        font-size: 40px;
+    }
+}
+
+
+
+
 
 ul[class*="list"] {
     padding: 0;
@@ -338,7 +365,7 @@ ul[class*="list"].concert-list > li {
 .blog-entry-title, .blog-entry-title > a {
     color: var(--primary-color);
     margin: 0 0 10px;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.1;
 }
 
@@ -350,11 +377,11 @@ ul[class*="list"].concert-list > li {
     text-align: left;
     background-color: #fff;
     padding: 10px 20px 20px;
-    box-shadow: 1px 1px 10px 3px rgb(0 0 0 / 10%);
+    box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgb(0 0 0 / 10%);
 }
 
 .concert-item-date {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.1;
     margin: 10px 0 12px;
     font-weight: 700;
@@ -362,7 +389,7 @@ ul[class*="list"].concert-list > li {
 }
 
 .concert-item-title {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.1;
     margin: 20px 0 12px;
     color: var(--dark-gray);
