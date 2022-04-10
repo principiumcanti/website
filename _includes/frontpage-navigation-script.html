@@ -1,0 +1,12 @@
+<script src="/assets/js/navigation-frontpage.js"></script>
+<script>
+  {% assign firstNavItemSlug = site.data.navigation[0] %}
+  registerSetFirstNavigationItemOnLoad('{{ firstNavItemSlug.name | slugify }}');
+
+  let navItemSlugs = Array.of(
+      {% for item in site.data.navigation %}
+  '{{ item.name | slugify }}',
+  {% endfor %}
+  )
+  registerSetNavigationOnScroll(navItemSlugs);
+</script>

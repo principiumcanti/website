@@ -1,0 +1,31 @@
+---
+layout: default-container
+---
+{% include i18n-date.html %}
+{% if page.image != nil %}
+<div class="mb-3 text-center">
+  <img class="img-fluid" src="{{page.image}}">
+</div>
+{% endif %}
+{% if page.pressebericht == true %}
+<span class="blog-entry-category"><a href="#">Pressebericht</a></span>
+{% endif %}
+{% unless page.pressebericht == true %}
+<span class="blog-entry-category"><a href="#">Blogartikel</a></span>
+{% endunless %}
+<h1 class="post-title">{{ page.title }}</h1>
+{% if page.subtitle != nil %}
+<h2>{{ page.subtitle }}</h2>
+{% endif %}
+<p>
+  <span class="small">{{ i18n_date }}</span>
+  {% if page.author != nil %}<span class="small"> | Von {{ page.author }}</span>{% endif %}
+  {% if page.quelle-name != nil and page.quelle-link != nil %}<span class="small"> | </span><a class="small" href="{{ page.quelle-link }}">{{ page.quelle-name }}</a>{% endif %}
+  {% if page.quelle-name != nil and page.quelle-link == nil %}<span class="small"> | {{ page.quelle-name }}</span>{% endif %}
+</p>
+{{content}}
+
+{% if page.quelle-name != nil and page.quelle-link != nil %}
+<p><em><span class="small">Quelle: </span><a class="small" href="{{ page.quelle-link }}">{{ page.quelle-name }}</a></em></p>
+{% endif %}
+

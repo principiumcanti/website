@@ -1,0 +1,165 @@
+body{
+  --box-title-text-color: var(--dark-gray);
+  --box-background-color: white;
+  --box-text-shadow-color: black;
+  --btn-text-color: black;
+  --infobox-title-text-color: var(--principium-gold);
+  --concert-title-text-color: var(--dark-gray);
+  --concert-date-text-color: var(--dark-gray);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --box-title-text-color: var(--dark-gray-invert);
+    --box-background-color: black;
+    --box-text-shadow-color: white;
+    --concert-title-text-color: var(--dark-gray-invert);
+    --concert-date-text-color: var(--dark-gray-invert);
+
+  }
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner-image {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 2500 / 1401;
+}
+
+.banner-title {
+  font-family: 'Blacksword';
+  text-shadow: 0.1rem 0.1rem 0.8rem black, -0.1rem -0.1rem 0.8rem var(--box-text-shadow-color) !important;
+  font-size: 8vw!important;
+  text-transform: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--super-light-gray);
+  color: var(--btn-text-color);
+  padding: 1.25rem 2rem;
+  border-radius: 6rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  border: 0;
+  width: auto;
+  line-height: 1;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: var(--principium-gold);
+  border-color: var(--principium-gold);
+  color: var(--btn-text-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--principium-gold);
+  border-color: var(--principium-gold);
+  color: var(--btn-text-color);
+}
+
+.infobox-icon {
+  font-size: 3rem;
+}
+
+.infobox-item {
+  color: var(--font-color);
+}
+
+.infobox-title {
+  color: var(--infobox-title-text-color);
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.box-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--box-title-text-color);
+}
+
+.box-content {
+  background-color: var(--box-background-color);
+  padding: 10%;
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem var(--box-shadow-color);
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+  :root{
+    font-size: 16px;
+  }
+
+  .box.left .box-content {
+    margin-left: -50px;
+  }
+  .box.right .box-content {
+    margin-right: -50px;
+  }
+  .box.left .box-figure {
+    margin-right: -50px;
+  }
+  .box.right .box-figure {
+    margin-left: -50px;
+  }
+  .box {
+    display: table;
+  }
+  .box-inner {
+    display: table-cell;
+    width: 50%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+  }
+  .box.right .box-inner:first-child {
+    z-index: 2;
+  }
+}
+
+/* Medium */
+@media screen and (max-width: 991px) {
+  :root{
+    font-size: 40px;
+  }
+}
+
+.concert-item {
+  text-align: left;
+  background-color: var(--box-background-color);
+  padding: 10px 20px 20px;
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem var(--box-shadow-color);
+}
+
+.concert-item-date {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 10px 0 12px;
+  font-weight: 700;
+  color: var(--concert-date-text-color);
+}
+
+.concert-item-title {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 20px 0 12px;
+  color: var(--concert-title-text-color);
+}
+
+.py-section {
+  padding-top: 5rem!important;
+  //padding-bottom: 5rem!important;
+}

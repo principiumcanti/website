@@ -1,0 +1,9 @@
+- name: Facebook
+  fontawesome-icon: fa-brands fa-facebook-f
+  link: https://www.facebook.com/Principium-Canti-184616798647339/
+- name: Instagram
+  fontawesome-icon: fa-brands fa-instagram
+  link: https://www.instagram.com/principiumcanti/
+- name: Youtube
+  fontawesome-icon: fa-brands fa-youtube
+  link: https://www.youtube.com/channel/UC5MElhUXD670ymInkP3Isbw

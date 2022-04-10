@@ -1,0 +1,10 @@
+- name: Start
+  link: /#
+- name: Über uns
+  link: /#über-uns
+- name: Aktuelles
+  link: /blog.html
+- name: Konzerte
+  link: /#konzerte
+- name: Kontakt
+  link: /#kontakt

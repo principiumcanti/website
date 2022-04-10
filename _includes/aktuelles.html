@@ -1,0 +1,25 @@
+<h2 id="nav-aktuelles" class="text-center">Aktuelles</h2>
+<ul class="blog-list list-md-3 my-4">
+  {% for post in site.posts limit:3 %}
+  <li class="blog-item">
+    <img class="blog-feature-img" src="{{ post.image }}" alt="Principium_Canti_Herborn_Weihnachtsmarkt">
+    <div class="blog-content">
+      {% if post.pressebericht == true %}
+      <span class="blog-entry-category"><a href="{{ post.url }}">Pressebericht</a></span>
+      {% endif %}
+      {% unless post.pressebericht == true %}
+      <span class="blog-entry-category"><a href="{{ post.url }}">Blogartikel</a></span>
+      {% endunless %}
+      <h3 class="blog-entry-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
+      <div class="blog-entry-summary">
+        {{ post.excerpt }}
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+<div class="m-4 d-flex align-items-center justify-content-center">
+  <a class="btn btn-primary align-center" href="/blog.html" role="button">Weitere Blogposts</a>
+</div>

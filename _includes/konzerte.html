@@ -1,0 +1,30 @@
+<h2 id="nav-konzerte" class="text-center">Konzerte</h2>
+<ul class="concert-list list-md-2 my-4">
+  {% for konzert in site.konzerte %}
+  {% capture i18n_date %}
+  {{ konzert.date | date: "%-d" }}.
+  {% assign m = konzert.date | date: "%-m" | minus: 1 %}
+  {{ site.data.de.months[m] }}
+  {{ konzert.date | date: "%Y" }}
+  {% endcapture %}
+  <li>
+    <div class="concert-item">
+      <div class="concert-item-date">{{ i18n_date }}</div>
+      <h3 class="concert-item-title">{{ konzert.title }}</h3>
+      <div class="concert-item-details">
+        {% if konzert.address %}
+          {% if konzert.google-maps == false %}
+            <span class="me-2"><i class="fa-solid fa-map-location-dot me-2"></i>{{ konzert.address }}</span>
+          {% endif %}
+        {% unless konzert.google-maps == false %}
+        <span class="me-2"><i class="fa-solid fa-map-location-dot me-2"></i><a target="_blank" href="https://www.google.com/maps/search/{% if konzert.zip != nil %}{{ konzert.zip }}%20{% endif %}{{konzert.address | uri_escape }}">{{ konzert.address }}</a></span>
+        {% endunless %}
+        {% endif %}
+        {% if konzert.time %}
+        <span class="me-2"><i class="fa-solid fa-clock me-2"></i>{{ konzert.time }}</span>
+        {% endif %}
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
