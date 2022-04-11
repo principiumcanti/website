@@ -1,6 +1,6 @@
 ---
 title: Jubiläums-Singen – Chorwettstreit als Trendmesser
-image: https://www.principiumcanti.de/wp-content/uploads/2018/05/Principium-Canti-Erbach.jpg
+image: /assets/images/blog/2018-05-29-Principium-Canti-Erbach.jpeg
 pressebericht: true
 quelle-name: Nassauische Neue Presse
 quelle-link: http://www.nnp.de/lokales/limburg_und_umgebung/Chorwettstreit-als-Trendmesser;art680,3002103

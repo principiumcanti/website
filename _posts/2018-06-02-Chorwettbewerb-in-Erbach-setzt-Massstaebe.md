@@ -1,7 +1,7 @@
 ---
 title: Chorwettbewerb in Erbach setzt Maßstäbe
 subtitle: Männergesangsverein „Eintracht“ Erbach begeistert als Organisator einer kulturellen Großveranstaltung mit 900 Sängern
-image: https://www.principiumcanti.de/wp-content/uploads/2018/05/Principium-Canti-Erbach.jpg
+image: /assets/images/blog/2018-05-29-Principium-Canti-Erbach.jpeg
 pressebericht: true
 quelle-name: Bad Camberg AM WOCHENENDE
 quelle-link: http://epaper.der-lokalanzeiger.de/eweb/media/vfa/2018/06/02/pdf/02_06_2018_BCAW_3_16e1282244.pdf

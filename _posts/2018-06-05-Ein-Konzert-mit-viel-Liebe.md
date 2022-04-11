@@ -1,6 +1,6 @@
 ---
 title: Ein Konzert mit viel Liebe
-image: https://www.principiumcanti.de/wp-content/uploads/2018/04/Principium-Canti-Kontakt.jpg
+image: /assets/images/blog/2018-06-05-Principium-Canti-im-Schnee.jpeg
 pressebericht: true
 quelle-name: Nassauische Neue Presse
 quelle-link: https://www.fnp.de/lokales/limburg-weilburg

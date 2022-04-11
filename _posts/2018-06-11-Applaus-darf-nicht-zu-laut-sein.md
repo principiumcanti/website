@@ -1,6 +1,6 @@
 ---
 title: Applaus darf nicht zu laut sein
-image: https://www.principiumcanti.de/wp-content/uploads/2018/06/Principium-Canti-Lindenholzhausen.jpg
+image: /assets/images/blog/2018-06-11-Principium-Canti-Lindenholzhausen.jpeg
 pressebericht: true
 quelle-name: www.mittelhessen.de
 quelle-link: https://www.mittelhessen.de/lokales/region-limburg-weilburg_artikel,-Applaus-darf-nicht-zu-laut-sein-_arid,1290261.html

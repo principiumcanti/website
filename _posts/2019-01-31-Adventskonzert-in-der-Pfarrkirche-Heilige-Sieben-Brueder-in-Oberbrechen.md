@@ -1,6 +1,6 @@
 ---
 title: Adventskonzert in der Pfarrkirche Heilige Sieben Brüder in Oberbrechen
-image: https://www.principiumcanti.de/wp-content/uploads/2019/01/Principium-Canti-Oberbrechen.jpg
+image: /assets/images/blog/2019-01-31-Principium-Canti-Oberbrechen.jpeg
 pressebericht: true
 ---
 „Frohlocket ihr Völker“, so hieß das Motto des Adventskonzertes, zu dem der MGV Eintracht Oberbrechen mit ihrem jungen Chorleiter Maximilian Schmitt aus Elz am Sonntag eingeladen hatte. Zahlreiche Besucher (knapp 200) hatten den Weg zum Gotteshaus gefunden um sich adventlich einstimmen zu lassen. Mit dem hier eher noch unbekannten Cantate Domino von Guiseppe Ottavio Pitoni in einem Arrangement des Amerikaners John Leavitt, stimmte der gastgebende Chor auf das Konzert ein. Vorsitzender Karl-Gisbert Roth begrüßte die Besucher, unter Ihnen auch die Ehrengäste des Abends MdL Joachim Veyelmann mit Gattin, Bgm Frank Groos, ebenfalls mit Gattin, die Vorsitzende der Gemeindevertretung, Frau Christel Höhler-Heun und Frau Sutherland als erste Beigeordnete der Gemeinde Brechen. Drei bekannte Lieder der Adventszeit bot die Eintacht dar. „O Heiland reiß die Himmel auf“, wie auch die zwei folgenden Stücke wurden sehr gut intoniert. Wenig bekannt waren die beiden Stücke von Franz Biebl, „Mond und Sterne neigen“ und „Adventskranzkerzen“ die der Chor sehr sicher vortrug.

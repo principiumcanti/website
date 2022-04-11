@@ -1,6 +1,6 @@
 ---
 title: Principium Canti überrascht mit Konzert am Weihnachtsmarktplatz
-image: https://www.principiumcanti.de/wp-content/uploads/2019/12/Principium_Canti_Herborn_Weihnachtsmarkt-960x683.jpeg
+image: /assets/images/blog/2019-12-11-Principium-Canti-Herborn-Weihnachtsmarkt.jpeg
 pressebericht: true
 quelle-name: Herborner Tageblatt
 author: Siegfried Gerdau

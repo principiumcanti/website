@@ -1,6 +1,6 @@
 ---
 title: "Gold, Silber, Sonderpreise: Das waren die erfolgreichsten Ensembles"
-image: https://www.principiumcanti.de/wp-content/uploads/2019/06/Principium-Canti-Limburger-Maennerchor-Festival-2019.jpg
+image: /assets/images/blog/2019-06-04-Principium-Canti-Limburger-Maennerchor-Festival-2019.jpeg
 pressebericht: true
 quelle-name: Nassauische Neue Presse
 quelle-link: https://www.lindenholzhausen.de/aktuelles/5866-wettbewerb-m%C3%A4nnerchor-festival-21-05-2019

@@ -1,6 +1,6 @@
 ---
 title: Klangreinheit bis in die höchsten Höhen
-image: https://www.principiumcanti.de/wp-content/uploads/2018/12/WhatsApp-Image-2018-11-30-at-12.15.37-960x682.jpeg
+image: /assets/images/blog/2018-11-20-Principium-Canti-Fleisbach.jpeg
 pressebericht: true
 quelle-name: www.mittelhessen.de
 quelle-link: https://www.mittelhessen.de/lokales/dillenburg/sinn/klangreinheit-bis-in-die-hochsten-hohen_19635652

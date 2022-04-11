@@ -1,6 +1,6 @@
 ---
 title: Glanzvolle Stimmen in der Kirche
-image: https://www.principiumcanti.de/wp-content/uploads/2019/12/Principium_Canti_Herborn_Auftritt-960x720.jpg
+image: /assets/images/blog/2019-12-08-Principium-Canti-Herborn.jpeg
 author: Siegfried Gerdau
 quelle-name: www.mittelhessen.de
 quelle-link: https://www.mittelhessen.de/lokales/dillenburg/herborn/glanzvolle-stimmen-in-der-kirche_20848614
@@ -9,7 +9,7 @@ pressebericht: true
 
 Zum zwölften Mal hatten Polizeidirektion Lahn-Dill und der Evangelischen Polizeiseelsorge zum Adventskonzert in die evangelische Stadtkirche von Herborn geladen. Fünf Chöre und ein Solist haben dabei am Samstagabend das Publikum begeistert.
 
-![Bild](https://www.principiumcanti.de/wp-content/uploads/2019/12/Principium_Canti_Herborn_Abschlusslied.jpg)
+![Bild](/assets/images/blog/2019-12-08-Principium-Canti-Herborn-Abschlusslied.jpeg)
 
 Volles Haus bis unters Dach: Wenn Polizeidirektion Lahn-Dill und Evangelische Polizeiseelsorge zum Adventskonzert laden, bleibt in der evangelischen Stadtkirche in Herborn Jahr für Jahr kaum ein Platz frei.
 <br/>*Foto: Siegfried Gerdau*

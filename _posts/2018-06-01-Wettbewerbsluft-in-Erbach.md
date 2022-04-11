@@ -1,7 +1,7 @@
 ---
 title: Wettbewerbsluft in Erbach
 subtitle: Sakraler Chorwettbewerb der Eintracht Erbach ein voller Erfolg – 900 Teilnehmende Sänger
-image: https://www.principiumcanti.de/wp-content/uploads/2018/05/Principium-Canti-Erbach.jpg
+image: /assets/images/blog/2018-05-29-Principium-Canti-Erbach.jpeg
 quelle-name: Camberger Anzeiger
 quelle-link: http://camberger-anzeiger.de/
 pressebericht: true

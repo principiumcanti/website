@@ -1,6 +1,6 @@
 ---
 title: 125 Jahre Kirchenchor „Cäcilia“ Arzbach – Adventskonzert zum Abschluss des Jubiläumsjahres
-image: https://www.principiumcanti.de/wp-content/uploads/2018/03/Principium-Canti-Arzbach.jpg
+image: /assets/images/blog/2018-03-06-Principium-Canti-Arzbach.jpeg
 pressebericht: true
 ort: Arzbach
 quelle-name: blick-aktuell.de

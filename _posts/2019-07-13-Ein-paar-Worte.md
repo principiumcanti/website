@@ -1,6 +1,6 @@
 ---
 title: Ein paar Worte...
-image: https://www.principiumcanti.de/wp-content/uploads/2019/07/Principium-Canti-Huettenberg-1.jpg
+image: /assets/images/blog/2019-07-13-Principium-Canti-Huettenberg.jpeg
 author: Principium Canti
 ---
 

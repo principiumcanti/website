@@ -1,6 +1,6 @@
 ---
 title: Ergreifende Lieder in der St.-Peter-Kirche – Pinocchio ´90 und Principium Canti gaben Benefizkonzert zugunsten Ruandas
-image: https://www.principiumcanti.de/wp-content/uploads/2018/04/Principium-Canti-Diez.jpeg
+image: /assets/images/blog/2018-04-11-Principium-Canti-Diez.jpeg
 pressebericht: true
 ---
 Pinocchio ´90 und Principium Canti ist zugunsten der Ruanda-Stiftung Helmut Weimar in der St.-Peter-Kirche in Diez aufgetreten. Trotz ungewöhnlicher Besetzung begeisterte die Gruppe auf ganzer Linie.
