@@ -52,6 +52,7 @@ body {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/montserrat-v12-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
   url('../fonts/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -65,6 +66,7 @@ body {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: url('../fonts/montserrat-v12-latin-600.eot'); /* IE9 Compat Modes */
   src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
   url('../fonts/montserrat-v12-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -78,6 +80,7 @@ body {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('../fonts/montserrat-v12-latin-700.eot'); /* IE9 Compat Modes */
   src: local('Montserrat Bold'), local('Montserrat-Bold'),
   url('../fonts/montserrat-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -89,7 +92,8 @@ body {
 
 @font-face {
   font-family: 'Blacksword'; /*a name to be used later*/
-  src: url('../fonts/Blacksword.woff'); /*URL to font*/
+  font-display: swap;
+  src: local('Blacksword'), url('../fonts/Blacksword.woff'); /*URL to font*/
 }
 
 /* Medium */
