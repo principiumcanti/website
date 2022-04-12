@@ -7,7 +7,8 @@ custom-css: /assets/css/blog-styles.css
 <ul class="blog-list list-md-2">
   {% for post in site.posts %}
   <li class="blog-item">
-    <img class="blog-feature-img" src="{{ post.image }}" alt="Principium_Canti_Herborn_Weihnachtsmarkt">
+<!--    <img class="blog-feature-img" src="{{ post.image }}" alt="Principium_Canti_Herborn_Weihnachtsmarkt">-->
+    {% picture jpt-webp {{ post.image }} --img class="blog-feature-img" %}
     <div class="blog-content">
       {% if post.pressebericht == true %}
       <span class="blog-entry-category"><a href="{{ post.url }}">Pressebericht</a></span>

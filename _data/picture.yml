@@ -1,0 +1,7 @@
+presets:
+  # This entry is purely an example. It is not the default JPT preset, nor is it available as a
+  # built-in.
+  default:
+    formats: [webp, original] # Order matters!
+    widths: [400, 600 ,800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600] # Image widths, in pixels.
+    dimension_attributes: true # Page reflow begone!

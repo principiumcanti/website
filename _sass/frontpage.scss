@@ -27,14 +27,61 @@ img {
   height: auto;
 }
 
-.banner-image {
-  background-image: url("/assets/images/banner/Principium-Canti-Banner.jpeg");
+.banner {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
   height: auto;
   aspect-ratio: 2500 / 1401;
+}
+
+.banner-image.400w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-400-bd5eb7e7e.jpeg");
+}
+
+.banner-image.600w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-600-bd5eb7e7e.jpeg");
+}
+
+.banner-image.800w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-800-bd5eb7e7e.jpeg");
+}
+
+.banner-image-1000w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-1000-bd5eb7e7e.jpeg");
+}
+
+.banner-image-1200w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-1200-bd5eb7e7e.jpeg");
+}
+
+.banner-image-1400w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-1400-bd5eb7e7e.jpeg");
+}
+
+.banner-image-1600w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-1600-bd5eb7e7e.jpeg");
+}
+
+.banner-image-1800w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-1800-bd5eb7e7e.jpeg");
+}
+
+.banner-image-2000w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-2000-bd5eb7e7e.jpeg");
+}
+
+.banner-image-2200w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-2200-bd5eb7e7e.jpeg");
+}
+
+.banner-image-2400w {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-2400-bd5eb7e7e.jpeg");
+}
+
+.banner-image {
+  background-image: url("/assets/images/banner/Principium-Canti-Banner-2500-bd5eb7e7e.jpeg");
 }
 
 .banner-title {

@@ -9,4 +9,34 @@
   {% endfor %}
   )
   registerSetNavigationOnScroll(navItemSlugs);
+
+  window.addEventListener('load', function (e){
+    const banner = document.querySelector('.banner');
+    if (window.innerWidth <= 400){
+      banner.classList.add("banner-image-400w");
+    } else if (window.innerWidth <= 600){
+      banner.classList.add("banner-image-600w");
+    } else if (window.innerWidth <= 800){
+      banner.classList.add("banner-image-800w");
+    } else if (window.innerWidth <= 1000){
+      banner.classList.add("banner-image-1000w");
+    } else if (window.innerWidth <= 1200){
+      banner.classList.add("banner-image-1200w");
+    } else if (window.innerWidth <= 1400){
+      banner.classList.add("banner-image-1400w");
+    } else if (window.innerWidth <= 1600){
+      banner.classList.add("banner-image-1600w");
+    } else if (window.innerWidth <= 1800){
+      banner.classList.add("banner-image-1800w");
+    } else if (window.innerWidth <= 2000){
+      banner.classList.add("banner-image-2000w");
+    } else if (window.innerWidth <= 2200){
+      banner.classList.add("banner-image-2200w");
+    } else if (window.innerWidth <= 2400){
+      banner.classList.add("banner-image-2400w");
+    } else {
+      banner.classList.add("banner-image");
+    }
+
+  })
 </script>
