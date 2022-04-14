@@ -15,4 +15,18 @@
     <a class="small" href="{{ item.link }}">{{ item.name }}</a>
     {% endfor %}
   </div>
+
+
+  <div id="wcb" class="carbonbadge"></div>
+  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+  <script>
+    window.matchMedia('(prefers-color-scheme: dark)')
+        .addEventListener('change', event => {
+          if (event.matches) {
+            document.querySelector('.carbonbadge').classList.add('wcb-d');
+          } else {
+            document.querySelector('.carbonbadge').classList.remove('wcb-d');
+          }
+        });
+  </script>
 </div>
