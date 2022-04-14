@@ -93,7 +93,9 @@ body {
 @font-face {
   font-family: 'Blacksword'; /*a name to be used later*/
   font-display: swap;
-  src: local('Blacksword'), url('../fonts/Blacksword.woff'); /*URL to font*/
+  src: local('Blacksword'),
+  url('../fonts/Blacksword-Principium-Canti.woff2'),
+  url('../fonts/Blacksword-Principium-Canti.woff');
 }
 
 /* Medium */
