@@ -1,9 +1,18 @@
 - name: Facebook
-  fontawesome-icon: fa-brands fa-facebook-f
+  icon:
+    name: icon-facebook
+    width: 320
+    height: 512
   link: https://www.facebook.com/Principium-Canti-184616798647339/
 - name: Instagram
-  fontawesome-icon: fa-brands fa-instagram
+  icon:
+    name: icon-instagram
+    width: 448
+    height: 512
   link: https://www.instagram.com/principiumcanti/
 - name: Youtube
-  fontawesome-icon: fa-brands fa-youtube
+  icon:
+    name: icon-youtube
+    width: 576
+    height: 512
   link: https://www.youtube.com/channel/UC5MElhUXD670ymInkP3Isbw

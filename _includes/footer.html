@@ -1,9 +1,12 @@
 <div class="d-flex flex-column justify-content-center align-items-center my-5">
   <div class="footer-brand">Principium Canti</div>
-  <!--<img src="/assets/images/footer/Principium-Canti-Logo-footer.jpeg" alt="">-->
   <div class="d-flex justify-content-center gap-4 my-3">
     {% for item in site.data.social-buttons %}
-      <a href="{{ item.link }}"><i class="{{ item.fontawesome-icon}}"></i></a>
+      <a href="{{ item.link }}">
+        <svg class="icon-shadow {{ item.icon.name }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {{item.icon.width}} {{item.icon.height}}" height="1.5rem">
+          <use href="#{{ item.icon.name }}" x="0" y="0" />
+        </svg>
+      </a>
     {% endfor %}
   </div>
   <span class="small my-2">Copyright 2022 by Principium Canti</span>

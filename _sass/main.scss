@@ -159,21 +159,22 @@ a.nav-link.active, .nav-link:hover {
   color: var(--link-hover-color)!important;
 }
 
-.fa-brands {
-  font-size: 1.5rem;
-  text-shadow: 0.1rem 0.1rem 0.5rem var(--text-shadow-color), -0.1rem -0.1rem 0.5rem var(--text-shadow-color);
+.icon-shadow {
+  -webkit-filter: drop-shadow( 0.1rem 0.1rem 0.3rem var(--text-shadow-color));
+  filter: drop-shadow( 0.1rem 0.1rem 0.3rem var(--text-shadow-color));
+  /* Similar syntax to box-shadow */
 }
 
-.fa-facebook-f {
-  color: var(--facebook-blue);
+.icon-facebook {
+  fill: var(--facebook-blue);
 }
 
-.fa-instagram {
-  color: var(--instagram-magenta);
+.icon-instagram {
+  fill: var(--instagram-magenta);
 }
 
-.fa-youtube {
-  color: var(--youtube-red);
+.icon-youtube {
+  fill: var(--youtube-red);
 }
 
 h1.post-title {
