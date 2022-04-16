@@ -1,0 +1,56 @@
+:root {
+  --principium-gold: #f9c10a;
+  --principium-gold-rgb: 249, 193, 10;
+  --super-light-gray: #eee;
+  --light-gray: #a0a0a0;
+  --light-gray-invert: #5f5f5f;
+  --gray: #555;
+  --gray-invert: #aaaaaa;
+  --dark-gray: #333;
+  --dark-gray-invert: #cccccc;
+  --facebook-blue: #4267b2;
+  --instagram-magenta: #ed4855;
+  --youtube-red: #ff0000;
+  --bs-body-font-family: "Montserrat" !important;
+  --bs-body-color: var(--gray) !important;
+  --bs-primary: var(--principium-gold) !important;
+  --bs-primary-rgb: var(--principium-gold-rgb) !important;
+}
+
+body {
+  --primary-color: var(--principium-gold);
+  --link-color: var(--light-gray);
+  --link-hover-color: var(--principium-gold);
+  --font-color: var(--gray);
+  --headline-color: var(--dark-gray);
+  --text-shadow-color: white;
+  --navbar-background-color: white;
+  --navbar-link-color: var(--dark-gray);
+  --background-color: #fff;
+  --background-color-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: var(--background-color-rgb) !important;
+  --bs-body-bg: var(--background-color) !important;
+  --navbar-brand-color: black;
+  --box-shadow-color: #00000010;
+  --box-shadow-color-rgb: 0,0,0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --link-color: var(--light-gray-invert);
+    --navbar-background-color: black;
+    --background-color: black;
+    --text-shadow-color: black;
+    --font-color: var(--gray-invert);
+    --navbar-brand-color: white;
+    --navbar-link-color: var(--dark-gray-invert);
+    --headline-color: var(--dark-gray-invert);
+    --background-color-rgb: 0, 0, 0;
+    --background-color: #000;
+    --bs-body-bg-rgb: var(--background-color-rgb) !important;
+    --bs-body-bg: var(--background-color) !important;
+    --box-shadow-color: #ffffff25;
+    --box-shadow-color-rgb: 255,255,255;
+    --bs-body-color: var(--gray-invert) !important;
+  }
+}

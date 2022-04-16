@@ -27,9 +27,9 @@ function registerSetFirstNavigationItemOnLoad(firstNavigationNameSlug) {
 function registerSetNavigationOnScroll(navigationNameSlugList) {
   window.addEventListener('scroll', function (e) {
     if (window.scrollY > 50) {
-      nav.classList.add('bg-white', 'shadow');
+      nav.classList.add('bg-body', 'shadow');
     } else{
-      nav.classList.remove('bg-white', 'shadow');
+      nav.classList.remove('bg-body', 'shadow');
     }
     if (window.scrollY - oldPosition > 0) {
       for (const navigationNameSlug of navigationNameSlugList) {
@@ -45,11 +45,11 @@ function registerSetNavigationOnScroll(navigationNameSlugList) {
 }
 
 document.addEventListener('show.bs.collapse', function (e){
-  nav.classList.add('bg-white', 'shadow');
+  nav.classList.add('bg-body', 'shadow');
 });
 
 document.addEventListener('hidden.bs.collapse', function (e){
   if(window.scrollY <= 50 ) {
-    nav.classList.remove('bg-white', 'shadow');
+    nav.classList.remove('bg-body', 'shadow');
   }
 });

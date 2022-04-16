@@ -147,9 +147,9 @@ img {
 
 /* Large */
 @media screen and (min-width: 992px) {
-  :root{
-    font-size: 16px;
-  }
+  //:root{
+  //  font-size: 16px;
+  //}
 
   .box.left .box-content {
     margin-left: -50px;
@@ -178,12 +178,12 @@ img {
   }
 }
 
-/* Medium */
-@media screen and (max-width: 991px) {
-  :root{
-    font-size: 40px;
-  }
-}
+///* Medium */
+//@media screen and (max-width: 991px) {
+//  :root{
+//    font-size: 40px;
+//  }
+//}
 
 .concert-item {
   text-align: left;

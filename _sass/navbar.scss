@@ -1,0 +1,25 @@
+@media (prefers-color-scheme: dark) {
+  .navbar-toggler-icon {
+    filter: invert(100%);
+  }
+}
+
+.navbar-brand {
+  font-family: Blacksword;
+  text-shadow: 0.1rem 0.1rem 0.5rem var(--text-shadow-color), -0.1rem -0.1rem 0.5rem var(--text-shadow-color);
+  color: var(--navbar-brand-color) !important;
+  font-size: 2rem;
+}
+
+.nav-item {
+  font-weight: 600;
+  text-shadow: 0.1rem 0.1rem 0.5rem var(--text-shadow-color), -0.1rem -0.1rem 0.5rem var(--text-shadow-color);
+}
+
+a.nav-link {
+  color: var(--navbar-link-color) !important;
+}
+
+a.nav-link.active, .nav-link:hover {
+  color: var(--link-hover-color)!important;
+}

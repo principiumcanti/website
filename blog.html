@@ -1,33 +1,29 @@
 ---
 title: Blog
-custom-css: /assets/css/blog-styles.css
 ---
 <h1 class="mb-5 text-center">Aktuelles</h1>
 
-<ul class="blog-list list-md-2">
+<div class="row">
   {% for post in site.posts %}
-  <li class="blog-item">
-<!--    <img class="blog-feature-img" src="{{ post.image }}" alt="Principium_Canti_Herborn_Weihnachtsmarkt">-->
-    {% picture jpt-webp {{ post.image }} --img class="blog-feature-img" %}
-    <div class="blog-content">
-      {% if post.pressebericht == true %}
-      <span class="blog-entry-category"><a href="{{ post.url }}">Pressebericht</a></span>
-      {% endif %}
-      {% unless post.pressebericht == true %}
-      <span class="blog-entry-category"><a href="{{ post.url }}">Blogartikel</a></span>
-      {% endunless %}
-      <h3 class="blog-entry-title">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h3>
-      <div class="blog-entry-summary">
-        {{ post.excerpt }}
-        <a href="{{ post.url }}">weiterlesen</a>
+  <div class="col-lg-6 my-4">
+    <div class="shadow bg-body">
+      {% picture jpt-webp {{post.image}} --img class="blog-feature-img img-fluid" %}
+      <div class="p-3">
+        {% if post.pressebericht == true %}
+        <span class="letter-spacing-2 text-uppercase"><a href="{{ post.url }}" class="text-decoration-none"><strong>Pressebericht</strong></a></span>
+        {% endif %}
+        {% unless post.pressebericht == true %}
+        <span class="letter-spacing-2 text-uppercase"><a href="{{ post.url }}" class="text-decoration-none"><strong>Blogartikel</strong></a></span>
+        {% endunless %}
+        <h3 class="blog-entry-title">
+          <a class="text-decoration-none text-primary" href="{{ post.url }}">{{ post.title }}</a>
+        </h3>
+        <div class="blog-entry-summary">
+          {{ post.excerpt }}
+          <a class="btn btn-primary rounded-pill" href="{{ post.url }}">weiterlesen</a>
+        </div>
       </div>
     </div>
-  </li>
-  <!--<li>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
-  </li>-->
+  </div>
   {% endfor %}
-</ul>
+</div>

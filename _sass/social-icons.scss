@@ -1,0 +1,17 @@
+.icon-shadow {
+  -webkit-filter: drop-shadow( 0.1rem 0.1rem 0.3rem var(--text-shadow-color));
+  filter: drop-shadow( 0.1rem 0.1rem 0.3rem var(--text-shadow-color));
+  /* Similar syntax to box-shadow */
+}
+
+.icon-facebook {
+  fill: var(--facebook-blue);
+}
+
+.icon-instagram {
+  fill: var(--instagram-magenta);
+}
+
+.icon-youtube {
+  fill: var(--youtube-red);
+}
