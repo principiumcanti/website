@@ -4,4 +4,24 @@ presets:
   default:
     formats: [webp, original] # Order matters!
     widths: [400, 600 ,800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600] # Image widths, in pixels.
+    attributes:
+      img: 'class="img-fluid"'
     dimension_attributes: true # Page reflow begone!
+
+  thumbnail-frontpage:
+    base_width: 416
+    widths: [200, 300 ,400, 500]
+    fallback_width: 416
+    formats: [ webp, original ]
+    attributes:
+      img: 'class="img-fluid"'
+    dimension_attributes: true
+
+  thumbnail-blog:
+    base_width: 636
+    widths: [200, 300 ,400, 500, 600, 700]
+    fallback_width: 636
+    formats: [ webp, original ]
+    attributes:
+      img: 'class="img-fluid"'
+    dimension_attributes: true

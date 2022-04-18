@@ -3,7 +3,7 @@
   {% for post in site.posts limit:3 %}
   <div class="col-xl-4 my-4">
     <div class="shadow bg-body">
-      {% picture jpt-webp {{post.image.url}} --img class="blog-feature-img img-fluid" alt="{{ post.image.alt-text }}" %}
+      {% picture thumbnail-frontpage {{post.image.url}} --img alt="{{ post.image.alt-text }}" %}
       <div class="p-3">
         {% if post.pressebericht == true %}
         <span class="letter-spacing-2 text-uppercase"><a href="{{ post.url }}" class="text-decoration-none"><strong>Pressebericht</strong></a></span>
