@@ -15,7 +15,7 @@
   </defs>
 </svg>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-body {% if page.url == "/" %}fixed-top{% endif %} {% unless page.url == "/"%}sticky-top bg-white shadow{% endunless %}">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light {% if page.url == "/" %}fixed-top{% endif %} {% unless page.url == "/"%}sticky-top bg-body shadow{% endunless %}">
   <div class="container-fluid">
     <button class="navbar-toggler bg-body" id="navbarToggleButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         {% for item in site.data.navigation %}
         <li class="nav-item mx-2">
-          <a id="nav-link-{{item.name| slugify }}" class="nav-link {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+          <a class="nav-link {% if page.url == item.link or page.url == item.alternative-link %}active{% endif %}" href="{% unless page.url == "/" %}/{% endunless %}{{ item.link }}">{{ item.name }}</a>
         </li>
         {% endfor %}
         {% for item in site.data.social-buttons %}

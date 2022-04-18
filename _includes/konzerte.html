@@ -1,4 +1,4 @@
-<h2 id="nav-konzerte" class="text-center">Konzerte</h2>
+<h2 class="text-center">Konzerte</h2>
 <div class="row justify-content-center">
   {% for konzert in site.konzerte %}
   {% capture i18n_date %}
@@ -9,9 +9,9 @@
   {% endcapture %}
   <div class="col-md-6 mt-4">
     <div class="shadow bg-body p-3">
-      <div class="h4 concert-item-date"><strong>{{ i18n_date }}</strong></div>
-      <h3 class="h4 concert-item-title">{{ konzert.title }}</h3>
-      <div class="concert-item-details">
+      <div class="h4"><strong>{{ i18n_date }}</strong></div>
+      <h3 class="h4">{{ konzert.title }}</h3>
+      <div >
         {% if konzert.address %}
         {% if konzert.google-maps == false %}
         <span class="me-2"><i class="fa-solid fa-map-location-dot me-2"></i>{{ konzert.address }}</span>

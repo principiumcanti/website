@@ -1,14 +1,23 @@
-<script src="/assets/js/navigation-frontpage.js"></script>
 <script>
-  {% assign firstNavItemSlug = site.data.navigation[0] %}
-  registerSetFirstNavigationItemOnLoad('{{ firstNavItemSlug.name | slugify }}');
+  const nav = document.querySelector('nav');
 
-  let navItemSlugs = Array.of(
-      {% for item in site.data.navigation %}
-  '{{ item.name | slugify }}',
-  {% endfor %}
-  )
-  registerSetNavigationOnScroll(navItemSlugs);
+  window.addEventListener('scroll', function (e) {
+    if (window.scrollY > 50) {
+      nav.classList.add('bg-body', 'shadow');
+    } else{
+      nav.classList.remove('bg-body', 'shadow');
+    }
+  });
+
+  document.addEventListener('show.bs.collapse', function (e){
+    nav.classList.add('bg-body', 'shadow');
+  });
+
+  document.addEventListener('hidden.bs.collapse', function (e){
+    if(window.scrollY <= 50 ) {
+      nav.classList.remove('bg-body', 'shadow');
+    }
+  });
 
   window.addEventListener('load', function (e){
     const banner = document.querySelector('.banner');
@@ -37,6 +46,5 @@
     } else {
       banner.classList.add("banner-image");
     }
-
   })
 </script>

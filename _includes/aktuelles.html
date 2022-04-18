@@ -1,4 +1,4 @@
-<h2 id="nav-aktuelles" class="text-center">Aktuelles</h2>
+<h2 class="text-center">Aktuelles</h2>
 <div class="row">
   {% for post in site.posts limit:3 %}
   <div class="col-xl-4 my-4">
@@ -11,10 +11,10 @@
         {% unless post.pressebericht == true %}
         <span class="letter-spacing-2 text-uppercase"><a href="{{ post.url }}" class="text-decoration-none"><strong>Blogartikel</strong></a></span>
         {% endunless %}
-        <h3 class="blog-entry-title">
+        <h3>
           <a class="text-decoration-none text-primary" href="{{ post.url }}">{{ post.title }}</a>
         </h3>
-        <div class="blog-entry-summary">
+        <div>
           {{ post.excerpt }}
         </div>
       </div>
