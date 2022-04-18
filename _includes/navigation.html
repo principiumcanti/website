@@ -35,7 +35,7 @@
         {% endfor %}
         {% for item in site.data.social-buttons %}
         <li class="nav-item">
-          <a class="nav-link" href="{{ item.link }}" target="_blank">
+          <a class="nav-link" href="{{ item.link }}" target="_blank" aria-label="{{ item.name }}">
             <svg class="icon-shadow {{ item.icon.name }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {{item.icon.width}} {{item.icon.height}}" height="1.5rem">
               <use href="#{{ item.icon.name }}" x="0" y="0" />
             </svg>
