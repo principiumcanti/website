@@ -1,6 +1,11 @@
 ---
 title: Glanzvolle Stimmen in der Kirche
-image: /assets/images/blog/2019-12-08-Principium-Canti-Herborn.jpeg
+image: 
+    url: /assets/images/blog/2019-12-08-Principium-Canti-Herborn.jpeg
+    alt-text: >
+        Das Foto zeigt die 12 Sänger von Principium Canti, während ihres Auftrittes in der evangelischen Stadtkirche in 
+        Herborn. Die Sänger sind gekleidet mit einem schwarzen Hemd und einem schwarzen Anzug. Sie halten ihre 
+        Notenmappen in den Händen und singen ein Lied. 
 author: Siegfried Gerdau
 quelle-name: www.mittelhessen.de
 quelle-link: https://www.mittelhessen.de/lokales/dillenburg/herborn/glanzvolle-stimmen-in-der-kirche_20848614

@@ -1,6 +1,10 @@
 ---
 title: Jubiläums-Singen – Chorwettstreit als Trendmesser
-image: /assets/images/blog/2018-05-29-Principium-Canti-Erbach.jpeg
+image: 
+    url: /assets/images/blog/2018-05-29-Principium-Canti-Erbach.jpeg
+    alt-text: >
+        Das Foto zeigt die 9 Sänger von Principium Canti während des Chorwettbewerbs vor dem Altar der Erbacher Kirche.
+        Die Männer tragen schwarze Hosen und Hemden und halten Ihre schwarzen Chormappen in der Hand.
 pressebericht: true
 quelle-name: Nassauische Neue Presse
 quelle-link: http://www.nnp.de/lokales/limburg_und_umgebung/Chorwettstreit-als-Trendmesser;art680,3002103

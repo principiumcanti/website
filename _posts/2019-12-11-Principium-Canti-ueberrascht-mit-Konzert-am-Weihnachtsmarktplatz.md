@@ -1,6 +1,10 @@
 ---
 title: Principium Canti überrascht mit Konzert am Weihnachtsmarktplatz
-image: /assets/images/blog/2019-12-11-Principium-Canti-Herborn-Weihnachtsmarkt.jpeg
+image: 
+    url: /assets/images/blog/2019-12-11-Principium-Canti-Herborn-Weihnachtsmarkt.jpeg
+    alt-text: >
+        Ein Foto von Principium Canti auf dem Weihnachtsmarkt in Herborn. Die Sänger von Principium Canti stehen 
+        gemeinsam mit einer Gruppe von Frauen um einen Stehtisch mit Glühweintassen und singen ein Lied.
 pressebericht: true
 quelle-name: Herborner Tageblatt
 author: Siegfried Gerdau

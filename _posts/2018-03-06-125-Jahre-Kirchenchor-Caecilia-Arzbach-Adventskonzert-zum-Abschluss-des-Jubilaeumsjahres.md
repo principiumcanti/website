@@ -1,6 +1,12 @@
 ---
 title: 125 Jahre Kirchenchor „Cäcilia“ Arzbach – Adventskonzert zum Abschluss des Jubiläumsjahres
-image: /assets/images/blog/2018-03-06-Principium-Canti-Arzbach.jpeg
+image: 
+    url: /assets/images/blog/2018-03-06-Principium-Canti-Arzbach.jpeg
+    alt-text: >
+        Das Foto zeigt die 9 Sänger von Principium Canti während ihres Auftritts in der Kirche St. Peter und Paul in 
+        Arzbach. Die schwarz gekleideten Sänger stehen in einem Halbkreis vor dem Altar. Vor ihnen befinden sich ihre 
+        Notenständer mit ihren Notenmappen. Vor ihnen sitzt ein Streichorchester. Am unteren Rand des Fotos sieht man 
+        ein paar der Zuschauer in den Kirchbänken sitzen.
 pressebericht: true
 ort: Arzbach
 quelle-name: blick-aktuell.de

@@ -1,6 +1,10 @@
 ---
 title: Ein Konzert mit viel Liebe
-image: /assets/images/blog/2018-06-05-Principium-Canti-im-Schnee.jpeg
+image: 
+    url: /assets/images/blog/2018-06-05-Principium-Canti-im-Schnee.jpeg
+    alt-text: >
+        Das Bild zeigt die 9 Sänger von Principium Canti, wie sie in ihren schwarzen Hosen und Hemden eine mit 
+        Schnee bedeckte Straße hinauf laufen. Im Hintergrund ist eine weiße Schneelandschaft zu erkennen.
 pressebericht: true
 quelle-name: Nassauische Neue Presse
 quelle-link: https://www.fnp.de/lokales/limburg-weilburg

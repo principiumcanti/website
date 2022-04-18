@@ -1,6 +1,14 @@
 ---
 title: "Gold, Silber, Sonderpreise: Das waren die erfolgreichsten Ensembles"
-image: /assets/images/blog/2019-06-04-Principium-Canti-Limburger-Maennerchor-Festival-2019.jpeg
+image: 
+    url: /assets/images/blog/2019-06-04-Principium-Canti-Limburger-Maennerchor-Festival-2019.jpeg
+    alt-text: >
+        Das Foto zeigt die 12 Sänger von Principium Canti, die gerade eine Pause auf dem Schulhof der Marienschule
+        Limburg machen, bevor sie am Limburger Chorwettbewerb in der Limburger Stadthalle teilnehmen. Alle Männer sind 
+        schwarz gekleidet. Manche tragen bereits ihr schwarzes Hemd, manche ihr Sacko und einer trägt ein schwarzes 
+        Unterhemd. Die Hälfte der Männer sitzt auf einer Bank an einen Tisch, während die andere Hälft hinter dem Tisch 
+        steht. Auch sieht man die Rucksäcke der Männer am Tisch angelehnt stehen, in denen Getränke und Notenmappen 
+        verstaut sind. Im Hintergrund ist das Gebäude der Marienschule Limburg und einige Bäume zu sehen.
 pressebericht: true
 quelle-name: Nassauische Neue Presse
 quelle-link: https://www.lindenholzhausen.de/aktuelles/5866-wettbewerb-m%C3%A4nnerchor-festival-21-05-2019

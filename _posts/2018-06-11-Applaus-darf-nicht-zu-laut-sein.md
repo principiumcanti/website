@@ -1,6 +1,11 @@
 ---
 title: Applaus darf nicht zu laut sein
-image: /assets/images/blog/2018-06-11-Principium-Canti-Lindenholzhausen.jpeg
+image: 
+    url: /assets/images/blog/2018-06-11-Principium-Canti-Lindenholzhausen.jpeg
+    alt-text: >
+        Das Foto zeigt die 7 Sänger von Principium Canti auf der Bühne während ihres Konzert im 
+        Dorfgemeinschaftshaus in Lindenholzhausen. Die Männer tragen schwarze Hosen und weiße Hemden. In der Hand halten
+        Sie ihre schwarzen Notenmappen. Am unteren Rand des Bildes sieht man im dunkeln einen Teil der Zuschauer. 
 pressebericht: true
 quelle-name: www.mittelhessen.de
 quelle-link: https://www.mittelhessen.de/lokales/region-limburg-weilburg_artikel,-Applaus-darf-nicht-zu-laut-sein-_arid,1290261.html
