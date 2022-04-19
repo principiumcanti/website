@@ -10,14 +10,14 @@ title: Blog
       {% picture thumbnail-blog {{post.image.url}} --img alt="{{post.image.alt-text}}"%}
       <div class="p-3">
         {% if post.pressebericht == true %}
-        <span class="letter-spacing-2 text-uppercase"><a href="{{ post.url }}" class="text-decoration-none"><strong>Pressebericht</strong></a></span>
+        <span class="letter-spacing-2 text-uppercase"><strong>Pressebericht</strong></span>
         {% endif %}
         {% unless post.pressebericht == true %}
-        <span class="letter-spacing-2 text-uppercase"><a href="{{ post.url }}" class="text-decoration-none"><strong>Blogartikel</strong></a></span>
+        <span class="letter-spacing-2 text-uppercase"><strong>Blogartikel</strong></span>
         {% endunless %}
-        <h3 class="blog-entry-title">
-          <a class="text-decoration-none text-primary" href="{{ post.url }}">{{ post.title }}</a>
-        </h3>
+        <h2 class="blog-entry-title">
+          <a class="text-decoration-none primary-color" href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
         <div class="blog-entry-summary">
           {{ post.excerpt }}
           <a class="btn btn-primary rounded-pill" href="{{ post.url }}">weiterlesen</a>

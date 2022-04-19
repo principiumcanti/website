@@ -8,12 +8,12 @@ layout: default-container
 </div>
 {% endif %}
 {% if page.pressebericht == true %}
-<span class="blog-entry-category"><a href="#">Pressebericht</a></span>
+<span class="letter-spacing-2 text-uppercase"><strong>Pressebericht</strong></span>
 {% endif %}
 {% unless page.pressebericht == true %}
-<span class="blog-entry-category"><a href="#">Blogartikel</a></span>
+<span class="letter-spacing-2 text-uppercase"><strong>Blogartikel</strong></span>
 {% endunless %}
-<h1 class="post-title">{{ page.title }}</h1>
+<h1 class="primary-color">{{ page.title }}</h1>
 {% if page.subtitle != nil %}
 <h2>{{ page.subtitle }}</h2>
 {% endif %}

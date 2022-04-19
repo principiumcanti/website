@@ -18,9 +18,9 @@
 }
 
 body {
-  --primary-color: var(--principium-gold);
+  --bs-primary: var(--bs-blue) !important;
+  --primary-button-font-color: white;
   --link-color: var(--gray);
-  --link-hover-color: var(--principium-gold);
   --font-color: var(--gray);
   --headline-color: var(--dark-gray);
   --text-shadow-color: white;
@@ -37,6 +37,8 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
+    --bs-primary: var(--bs-yellow) !important;
+    --primary-button-font-color: black;
     --link-color: var(--gray-invert);
     --navbar-background-color: black;
     --background-color: black;

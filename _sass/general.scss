@@ -4,7 +4,7 @@
 }
 
 .primary-color {
-  color: var(--primary-color);
+  color: var(--bs-primary);
 }
 
 .fill-body-color {
@@ -12,14 +12,14 @@
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color: var(--bs-primary);
 }
 a {
   color: var(--link-color);
 }
 
 .btn-primary{
-  color: #000;
+  color: var(--primary-button-font-color);
   background-color: var(--bs-primary);
   border-top-color: var(--bs-primary);
   border-bottom-color: var(--bs-primary);
@@ -28,7 +28,7 @@ a {
 }
 
 .btn-primary:hover {
-  color: #000;
+  color: var(--primary-button-font-color);
   background-color: var(--bs-primary);
   border-color: var(--bs-primary);
 }
