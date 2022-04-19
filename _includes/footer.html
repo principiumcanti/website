@@ -28,5 +28,8 @@
             document.querySelector('.carbonbadge').classList.remove('wcb-d');
           }
         });
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+      document.querySelector('.carbonbadge').classList.add('wcb-d');
+    }
   </script>
 </div>
