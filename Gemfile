@@ -6,6 +6,7 @@ source "https://rubygems.org"
 gem "jekyll"
 
 gem "webrick", "~> 1.7"
+gem 'bootstrap', '~> 5.1.3'
 
 group :jekyll_plugins do
    # (other jekyll plugins)
