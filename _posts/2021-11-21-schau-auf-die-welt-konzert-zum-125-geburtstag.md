@@ -1,5 +1,5 @@
 ---
-title: '"Schau auf die Welt" - Konzert zum 125. Geburtstag'
+title: Schau auf die Welt - Konzert zum 125. Geburtstag
 pressebericht: true
 quelle-name: meine-news.de
 quelle-link: https://www.meine-news.de/roellbach/c-vereine/schau-auf-die-welt-konzert-zum-125-geburtstag_a108006
