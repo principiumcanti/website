@@ -37,7 +37,7 @@ collections:
     fields:
       - {label: "Titel", name: "title", widget: "string", required: true }
       - {label: "Datum", name: "date", widget: "date", required: true }
-      - {label: "PLZ", name: "zip", widget: "string"}
-      - {label: "Adresse", name: "address", widget: "string"}
-      - {label: "Zeit", name: "time", widget: "string"}
+      - {label: "PLZ", name: "zip", widget: "string", required: false}
+      - {label: "Adresse", name: "address", widget: "string", required: false}
+      - {label: "Zeit", name: "time", widget: "string", required: false}
 
