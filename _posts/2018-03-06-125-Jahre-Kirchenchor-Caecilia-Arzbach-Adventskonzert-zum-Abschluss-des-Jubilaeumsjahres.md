@@ -8,7 +8,6 @@ image:
         Notenständer mit ihren Notenmappen. Vor ihnen sitzt ein Streichorchester. Am unteren Rand des Fotos sieht man 
         ein paar der Zuschauer in den Kirchbänken sitzen.
 pressebericht: true
-ort: Arzbach
 quelle-name: blick-aktuell.de
 quelle-link: https://www.blick-aktuell.de/Berichte/Adventskonzert-zumAbschluss-des-Jubilaeumsjahres-303058.html
 ---

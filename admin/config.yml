@@ -1,0 +1,28 @@
+backend:
+  name: github
+  branch: main
+  repo: "principiumcanti/principiumcanti.github.io"
+
+media_folder: "assets/images/uploads"
+public_folder: "assets/images/uploads"
+
+collections:
+  - name: "artikel" # Used in routes, e.g., /admin/collections/blog
+    label: "Artikel" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string", required: true }
+      - {label: "Pressebericht", name: "pressebericht", widget: "boolean", default: true }
+      - {label: "Quellenname", name: "quelle-name", widget: "string"}
+      - {label: "Quellenlink", name: "quelle-link", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - label: "Artikelbild"
+        name: "image"
+        widget: "object"
+        collapsed: false
+        fields:
+          - {label: "Bild", name: "url", widget: "image", required: true, allowMultiple: false}
+          - {label: "Alternativtext", name: "alt-text", widget: "text", required: true}
+      - {label: "Body", name: "body", widget: "markdown"}
