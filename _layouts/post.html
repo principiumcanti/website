@@ -4,7 +4,7 @@ layout: default-container
 {% include i18n-date.html %}
 {% if page.image != nil %}
 <div class="mb-3 text-center">
-  {% picture {{page.image.url}} --img class="img-fluid" width="960" alt="{{page.image.alt-text}}" %}
+  {% picture {{page.image.path}} --img class="img-fluid" width="960" alt="{{page.image.alt}}" %}
 </div>
 {% endif %}
 {% if page.pressebericht == true %}

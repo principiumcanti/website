@@ -1,8 +1,8 @@
 ---
 title: Adventskonzert in der Pfarrkirche Heilige Sieben Brüder in Oberbrechen
 image: 
-    url: /assets/images/blog/2019-01-31-Principium-Canti-Oberbrechen.jpeg
-    alt-text: >
+    path: /assets/images/blog/2019-01-31-Principium-Canti-Oberbrechen.jpeg
+    alt: >
         Das Foto zeigt die 12 Sänger von Principium Canti in der Kirche in Oberbrechen während ihres Auftritts. Die 
         Sänger tragen ein schwarzes Hemd und einen schwarzen Anzug und halten Notenmappen während sie singen. Sie stehen 
         vor dem Altar der Kirche. Im Hintergrund ist der Hochaltar zu sehen, welcher von zwei Weihnachtsbäumen 

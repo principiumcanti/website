@@ -5,8 +5,8 @@ quelle-name: meine-news.de
 quelle-link: https://www.meine-news.de/roellbach/c-vereine/schau-auf-die-welt-konzert-zum-125-geburtstag_a108006
 author: Manfred Hofmann
 image:
-  url: assets/images/uploads/principiumcanti_roellbach.jpeg
-  alt-text: Auf dem Foto sieht man die zehn Sänger von Principium Canti in ihren
+  path: assets/images/uploads/principiumcanti_roellbach.jpeg
+  alt: Auf dem Foto sieht man die zehn Sänger von Principium Canti in ihren
     schwarzen Anzügen nach ihrem Auftritt vor dem Altar der Röllbacher
     Pfarrkirche.
 ---

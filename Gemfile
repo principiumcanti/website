@@ -11,4 +11,5 @@ gem 'bootstrap', '~> 5.1.3'
 group :jekyll_plugins do
    # (other jekyll plugins)
    gem 'jekyll_picture_tag', '~> 2.0'
+   gem 'jekyll-seo-tag'
  end

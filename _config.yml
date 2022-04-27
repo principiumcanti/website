@@ -22,3 +22,20 @@ sass:
 
 exclude:
   - Makefile
+
+permalink: /:slug/
+
+plugins:
+  - jekyll-seo-tag
+
+title: Principium Canti
+tagline: Das Männervokalensemble aus Lindenholzhausen
+description: >
+  Das Männervokalensemble Principium Canti aus Lindenholzhausen sind 13 junge Sänger die ihre Freude am gemeinsamen singen teilen.
+locale: de_DE
+social:
+  name: Principium Canti
+  links:
+    - https://www.facebook.com/Principium-Canti-184616798647339/
+    - https://www.instagram.com/principiumcanti/
+    - https://www.youtube.com/channel/UC5MElhUXD670ymInkP3Isbw

@@ -1,8 +1,8 @@
 ---
 title: Ergreifende Lieder in der St.-Peter-Kirche – Pinocchio ´90 und Principium Canti gaben Benefizkonzert zugunsten Ruandas
 image: 
-    url: /assets/images/blog/2018-04-11-Principium-Canti-Diez.jpeg
-    alt-text: >
+    path: /assets/images/blog/2018-04-11-Principium-Canti-Diez.jpeg
+    alt: >
         Das Foto zeigt die 9 Sänger von Principium Canti in der St.-Peter-Kirche in Diez bei Ihrem Auftritt. Die
         Sänger stehen vor dem Altar und tragen schwarze Hemden und Hosen. Vor ihnen stehen jeweils schwarze Notenständer
         mit ihren schwarzen Notenmappen. Im Hintergrund sieht man die Orgel und die Kanzel der Kirche.

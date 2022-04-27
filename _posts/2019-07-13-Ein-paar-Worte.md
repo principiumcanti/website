@@ -1,8 +1,8 @@
 ---
 title: Ein paar Worte...
 image: 
-    url: /assets/images/blog/2019-07-13-Principium-Canti-Huettenberg.jpeg
-    alt-text: >
+    path: /assets/images/blog/2019-07-13-Principium-Canti-Huettenberg.jpeg
+    alt: >
         Das Foto zeigt die 10 Sänger von Principium Canti auf der Bühne beim Chorwettbewerb anlässlich der 145 jährigen 
         Jubiläums des MGV "Eintracht" Hüttenberg.
 author: Principium Canti

@@ -3,7 +3,7 @@
   {% for post in site.posts limit:3 %}
   <div class="col-xl-4 my-4">
     <div class="shadow bg-body">
-      {% picture thumbnail-frontpage {{post.image.url}} --img alt="{{ post.image.alt-text }}" %}
+      {% picture thumbnail-frontpage {{post.image.path}} --img alt="{{ post.image.alt }}" %}
       <div class="p-3">
         {% if post.pressebericht == true %}
         <span class="letter-spacing-2 text-uppercase"><strong>Pressebericht</strong></span>
@@ -23,5 +23,5 @@
   {% endfor %}
 </div>
 <div class="m-4 d-flex align-items-center justify-content-center">
-  <a class="btn btn-primary btn-lg rounded-pill text-uppercase letter-spacing-4 align-center" href="/blog.html" role="button">Weitere Blogposts</a>
+  <a class="btn btn-primary btn-lg rounded-pill text-uppercase letter-spacing-4 align-center" href="/blog/" role="button">Weitere Blogposts</a>
 </div>

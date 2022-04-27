@@ -1,8 +1,8 @@
 ---
 title: Klangreinheit bis in die höchsten Höhen
 image: 
-    url: /assets/images/blog/2018-11-20-Principium-Canti-Fleisbach.jpeg
-    alt-text: >
+    path: /assets/images/blog/2018-11-20-Principium-Canti-Fleisbach.jpeg
+    alt: >
         Das Foto zeigt die 11 Sänger von Principium Canti in der Fleisbacher Kirche bei ihrem Auftritt. Sie stehen vor
         dem Altar in ihren schwarzen Anzügen mit schwarzen Hemden. Vor ihnen steht jeweils ein schwarzer Notenständer 
         mit ihren Notenmappen.
