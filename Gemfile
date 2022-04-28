@@ -12,4 +12,5 @@ group :jekyll_plugins do
    # (other jekyll plugins)
    gem 'jekyll_picture_tag', '~> 2.0'
    gem 'jekyll-seo-tag'
+   gem 'jekyll-sitemap'
  end

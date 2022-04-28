@@ -27,6 +27,7 @@ permalink: /:slug/
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 title: Principium Canti
 tagline: Das Männervokalensemble aus Lindenholzhausen
