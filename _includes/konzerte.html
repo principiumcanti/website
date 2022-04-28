@@ -17,7 +17,7 @@
         <span class="me-2"><i class="fa-solid fa-map-location-dot me-2"></i>{{ konzert.address }}</span>
         {% endif %}
         {% unless konzert.google-maps == false %}
-        <span class="me-2"><i class="fa-solid fa-map-location-dot me-2"></i><a class="text-decoration-none" target="_blank" href="https://www.google.com/maps/search/{% if konzert.zip != nil %}{{ konzert.zip }}%20{% endif %}{{konzert.address | uri_escape }}">{{ konzert.address }}</a></span>
+        <span class="me-2"><i class="fa-solid fa-map-location-dot me-2"></i><a class="text-decoration-none" target="_blank" href="https://www.google.com/maps/search/{% if konzert.zip != nil %}{{ konzert.zip }}%20{% endif %}{{konzert.address | uri_escape }}" rel="noopener noreferrer">{{ konzert.address }}</a></span>
         {% endunless %}
         {% endif %}
         {% if konzert.time %}

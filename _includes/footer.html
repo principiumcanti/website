@@ -2,7 +2,7 @@
   <div class="footer-brand">Principium Canti</div>
   <div class="d-flex justify-content-center gap-4 my-3">
     {% for item in site.data.social-buttons %}
-      <a href="{{ item.link }}" target="_blank" aria-label="{{ item.name }}">
+      <a href="{{ item.link }}" target="_blank" aria-label="{{ item.name }}" rel="noopener noreferrer">
         <svg class="icon-shadow {{ item.icon.name }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {{item.icon.width}} {{item.icon.height}}" height="1.5rem">
           <use href="#{{ item.icon.name }}" x="0" y="0" />
         </svg>
