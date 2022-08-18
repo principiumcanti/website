@@ -16,8 +16,13 @@
     {% endfor %}
   </div>
 
-
-  <div id="wcb" class="carbonbadge"></div>
+  <div id="wcb" class="carbonbadge carbonbadge-custom"></div>
+  <style>
+      #wcb.carbonbadge-custom {
+      --b1: var(--website-carbon-badge-bg-1) !important;
+      --b2: var(--website-carbon-badge-bg-2) !important;
+  }
+  </style>
   <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
   <script>
     window.matchMedia('(prefers-color-scheme: dark)')

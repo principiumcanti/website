@@ -15,6 +15,7 @@
   --bs-body-color: #000 !important;
   --bs-primary: var(--principium-gold) !important;
   --bs-primary-rgb: var(--principium-gold-rgb) !important;
+  --box-text-shadow-color: var(--gray);
 }
 
 body {
@@ -33,6 +34,8 @@ body {
   --navbar-brand-color: black;
   --box-shadow-color: #00000010;
   --box-shadow-color-rgb: 0,0,0;
+  --website-carbon-badge-bg-1:var(--bs-blue);
+  --website-carbon-badge-bg-2:var(--gray);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,5 +57,7 @@ body {
     --box-shadow-color: #ffffff25;
     --box-shadow-color-rgb: 255,255,255;
     --bs-body-color: #fff !important;
+    --website-carbon-badge-bg-1: black;
+    --website-carbon-badge-bg-2: var(--principium-gold);
   }
 }
