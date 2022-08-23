@@ -7,7 +7,7 @@ Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der V
 
 ## Verantwortlicher
 Joshua Töpfer <br/>
-Sackstr. 10 <br/>
+Am Wingert 1 <br/>
 65551 Limburg an der Lahn <br/>
 Deutschland <br/>
 E-Mail Adresse: <a href="javascript:linkTo_UnCryptMailto('~rz}KzwQztzz~trz?uv', 17);">info [at] principiumcanti [dot] de</a> <br/>
