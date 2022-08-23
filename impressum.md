@@ -5,7 +5,7 @@ title: Impressum
 
 ## Angaben gemäß § 5 TMG:
 Joshua Töpfer <br/>
-Sackstraße 10 <br/>
+Am Wingert 1 <br/>
 65551 Limburg a. d. Lahn
 
 ## Kontakt:
@@ -14,7 +14,7 @@ E-Mail: <a href="javascript:linkTo_UnCryptMailto('~rz}KzwQztzz~t
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 Joshua Töpfer <br/>
-Sackstraße 10 <br/>
+Am Wingert 1 <br/>
 65551 Limburg a. d. Lahn
 
 ## Haftung für Inhalte
