@@ -15,7 +15,7 @@
           <a class="text-decoration-none primary-color" href="{{ post.url }}">{{ post.title }}</a>
         </h3>
         <div>
-          {{ post.excerpt }}
+          {{ post.excerpt | strip_html | truncatewords:50 }}
         </div>
       </div>
     </div>
