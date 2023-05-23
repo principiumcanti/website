@@ -1,4 +1,23 @@
 <h2 class="h1 text-uppercase text-center">Konzerte</h2>
+<svg style="display: none">
+  <defs>
+    <symbol id="geo-alt-fill" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+    </symbol>
+  </defs>
+  <use href="#geo-alt-fill"/>
+</svg>
+
+<svg style="display: none">
+  <defs>
+    <symbol id="clock" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+    </symbol>
+  </defs>
+  <use href="#clock"/>
+</svg>
+
 <div class="row justify-content-center">
   {% for konzert in site.konzerte %}
   {% capture i18n_date %}
@@ -14,14 +33,27 @@
       <div >
         {% if konzert.address %}
         {% if konzert.google-maps == false %}
-        <span class="me-2"><i class="fa-solid fa-map-location-dot me-2"></i>{{ konzert.address }}</span>
+        <span class="me-2">
+          <svg width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 20 20">
+            <use href="#geo-alt-fill" />
+          </svg>
+          {{ konzert.address }}</span>
         {% endif %}
         {% unless konzert.google-maps == false %}
-        <span class="me-2"><i class="fa-solid fa-map-location-dot me-2"></i><a class="text-decoration-none" target="_blank" href="https://www.google.com/maps/search/{% if konzert.zip != nil %}{{ konzert.zip }}%20{% endif %}{{konzert.address | uri_escape }}" rel="noopener noreferrer">{{ konzert.address }}</a></span>
+        <span class="me-2">
+          <svg width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 20 20">
+            <use href="#geo-alt-fill" />
+          </svg>
+          <a class="text-decoration-none" target="_blank" href="https://www.google.com/maps/search/{% if konzert.zip != nil %}{{ konzert.zip }}%20{% endif %}{{konzert.address | uri_escape }}" rel="noopener noreferrer">{{ konzert.address }}</a></span>
         {% endunless %}
         {% endif %}
         {% if konzert.time %}
-        <span class="me-2"><i class="fa-solid fa-clock me-2"></i>{{ konzert.time }}</span>
+        <span class="me-2">
+          <svg width="20" height="20" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 20 20">
+            <use href="#clock" />
+          </svg>
+          {{ konzert.time }}
+        </span>
         {% endif %}
       </div>
     </div>
