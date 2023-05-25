@@ -1,23 +1,23 @@
 <script>
   const nav = document.querySelector('nav');
 
-  window.addEventListener('scroll', function (e) {
-    if (window.scrollY > 50) {
-      nav.classList.add('bg-body', 'shadow');
-    } else{
-      nav.classList.remove('bg-body', 'shadow');
-    }
-  });
-
-  document.addEventListener('show.bs.collapse', function (e){
-    nav.classList.add('bg-body', 'shadow');
-  });
-
-  document.addEventListener('hidden.bs.collapse', function (e){
-    if(window.scrollY <= 50 ) {
-      nav.classList.remove('bg-body', 'shadow');
-    }
-  });
+  // window.addEventListener('scroll', function (e) {
+  //   if (window.scrollY > 50 || document.getElementById("navbarToggler").classList.contains('open')) {
+  //     nav.classList.add('bg-body', 'shadow');
+  //   } else {
+  //     nav.classList.remove('bg-body', 'shadow');
+  //   }
+  // });
+  //
+  // document.addEventListener('show.bs.collapse', function (e){
+  //   nav.classList.add('bg-body', 'shadow');
+  // });
+  //
+  // document.addEventListener('hidden.bs.collapse', function (e){
+  //   if(window.scrollY <= 50 ) {
+  //     nav.classList.remove('bg-body', 'shadow');
+  //   }
+  // });
 
   window.addEventListener('load', function (e){
     const banner = document.querySelector('.banner');
