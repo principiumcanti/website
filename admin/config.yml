@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-  repo: "principiumcanti/principiumcanti.github.io"
+  repo: "principiumcanti/website"
 
 publish_mode: editorial_workflow
 
