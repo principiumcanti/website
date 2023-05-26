@@ -45,12 +45,21 @@ collections:
       - {label: "PLZ", name: "zip", widget: "string", required: false}
       - {label: "Adresse", name: "address", widget: "string", required: false}
       - {label: "Zeit", name: "time", widget: "string", required: false}
-  - name: "Seiten"
+  - name: "seiten"
+    label: "Seiten"
     files:
-      - name: "Impressum"
+      - name: "impressum"
+        label: "Impressum"
         file: "impressum.md"
         preview_path: "impressum"
-      - name: "Datenschutzerklärung"
+        fields: # The fields for each document, usually in front matter
+          - { label: "Titel", name: "title", widget: "string", required: true }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "datenschutzerklaerung"
+        label: "Datenschutzerklärung"
         file: "datenschutzerklaerung.md"
         preview_path: "datenschutzerklaerung"
+        fields: # The fields for each document, usually in front matter
+          - { label: "Titel", name: "title", widget: "string", required: true }
+          - { label: "Body", name: "body", widget: "markdown" }
 
