@@ -54,9 +54,11 @@ collections:
         fields:
           - label: "Infobox"
             name: "infobox"
+            widget: object
             fields:
               - label: "Herz"
                 name: "herz"
+                widget: object
                 fields:
                   - {label: Titel, name: heading, widget: string}
       - name: "impressum"
