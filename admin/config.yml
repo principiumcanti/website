@@ -48,6 +48,11 @@ collections:
   - name: "seiten"
     label: "Seiten"
     files:
+      - name: "startseite"
+        label: "Startseite"
+        file: "_data/frontpage.yml"
+        fields:
+          - { label: "Infobox Herz Titel", name: "infobox.herz.heading", widget: "string", required: true}
       - name: "impressum"
         label: "Impressum"
         file: "impressum.md"
