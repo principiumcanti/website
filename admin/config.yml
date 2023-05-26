@@ -7,6 +7,10 @@ publish_mode: editorial_workflow
 
 media_folder: "assets/images/uploads"
 public_folder: "assets/images/uploads"
+site_url: https://principiumcanti.de
+display_url: https://principiumcanti.de
+logo_url: https://principiumcanti.de/assets/images/logo/PrincipiumCanti.svg
+locale: 'de'
 
 collections:
   - name: "artikel" # Used in routes, e.g., /admin/collections/blog
