@@ -4,9 +4,17 @@ title: Impressum
 # Impressum
 
 ## Angaben gemäß § 5 TMG:
-Joshua Töpfer <br/>
-Am Wingert 1 <br/>
-65551 Limburg a. d. Lahn
+<b>Principium Canti Lindenholzhausen e.V.</b><br/>
+&#8291;1. Vorsitzender Nikodemus Giehl<br/>
+
+Engstraße 7 <br/>
+65551 Limburg a. d. Lahn<br/>
+
+<b>Vereinsregister:</b> VR 2374<br/>
+<b>Registergericht:</b> Amtsgericht Limburg a. d. Lahn<br/>
+
+<b>Vertreten durch:</b><br/>
+&#8291;1. Vorsitzender Nikodemus Giehl
 
 ## Kontakt:
 Telefon: +49 172 3666344 <br/>
