@@ -4,5 +4,5 @@ title: Glaube, Hoffnung und Tod Konzert mit Ensemble Sonamento Limburg
 zip: 65553
 address: Dietkirchen - Kirche St. Lubentius
 time: "17:00"
-show: true
+show: false
 ---

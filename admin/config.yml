@@ -45,6 +45,7 @@ collections:
       - {label: "PLZ", name: "zip", widget: "string", required: false}
       - {label: "Adresse", name: "address", widget: "string", required: false}
       - {label: "Zeit", name: "time", widget: "string", required: false}
+      - {label: "Anzeige", name: "show", widget: "boolean", required: true }
   - name: "seiten"
     label: "Seiten"
     files:

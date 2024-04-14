@@ -4,5 +4,5 @@ title: Konzert im Rahmen der Kunstausstellung von Uwe Blümling "Malerei - So wi
 zip: 65549
 address: Limburg - Historisches Rathaus
 time: "17:00"
-show: true
+show: false
 ---

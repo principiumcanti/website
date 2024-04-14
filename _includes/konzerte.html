@@ -19,13 +19,14 @@
 </svg>
 
 <div class="row justify-content-center">
-  {% for konzert in site.konzerte | where:"show",true %}
+  {% for konzert in site.konzerte %}
   {% capture i18n_date %}
   {{ konzert.date | date: "%-d" }}.
   {% assign m = konzert.date | date: "%-m" | minus: 1 %}
   {{ site.data.de.months[m] }}
   {{ konzert.date | date: "%Y" }}
   {% endcapture %}
+  {% if konzert.show %}
   <div class="col-md-6 mt-4">
     <div class="shadow bg-body p-3">
       <div class="h4"><strong>{{ i18n_date }}</strong></div>
@@ -59,5 +60,6 @@
     </div>
 
   </div>
+  {% endif %}
   {% endfor %}
 </div>
