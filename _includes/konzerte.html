@@ -19,7 +19,7 @@
 </svg>
 
 <div class="row justify-content-center">
-  {% for konzert in site.konzerte %}
+  {% for konzert in site.konzerte | where:"show",true %}
   {% capture i18n_date %}
   {{ konzert.date | date: "%-d" }}.
   {% assign m = konzert.date | date: "%-m" | minus: 1 %}
