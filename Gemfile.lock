@@ -104,7 +104,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (~> 5.3.3)
-  jekyll
+  jekyll (~> 4.4.1)
   jekyll-seo-tag
   jekyll-sitemap
   jekyll_picture_tag (~> 2.1.2)
