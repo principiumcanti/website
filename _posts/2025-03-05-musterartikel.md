@@ -7,12 +7,8 @@ quelle-link: " "
 author: Joshua
 image:
   url: assets/images/uploads/principiumcanti_roellbach.jpeg
-  alt-text: " "
+  alt-text: " test"
 ---
 L﻿orem Ipsum 
-
-
-
-![](assets/images/uploads/principiumcanti_roellbach.jpeg)
 
 L﻿orem Ipsum
