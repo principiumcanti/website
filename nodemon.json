@@ -1,0 +1,14 @@
+{
+  "watch": [
+    "netlify/functions/",
+    "netlify/utils/",
+    "local-functions-server/",
+    "netlify.toml"
+  ],
+  "ext": "js,json,toml",
+  "ignore": [
+    "node_modules/",
+    ".git/"
+  ],
+  "verbose": true
+}

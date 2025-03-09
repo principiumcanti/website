@@ -7,3 +7,13 @@ _site/
 vendor/
 
 .idea
+
+# Node.js
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.env
+
+# Docker
+docker-volumes

@@ -1,0 +1,310 @@
+---
+title: Fördermitglied werden
+layout: default-container
+include-public-key: true
+---
+<h1 class="mb-5 text-center">Fördermitglied werden!</h1>
+<style>
+    canvas { border: var(--bs-border-width) solid var(--bs-border-color); width: 100%; height: 200px; border-radius: 6px; }
+</style>
+
+<div class="row justify-content-center">
+  <form class="row g-3 needs-validation" id="membershipForm" novalidate>
+    <div class="col-md-6">
+      <label for="inputVorname" class="form-label">Vorname</label>
+      <input type="text" class="form-control" id="inputVorname" name="vorname" required>
+      <div class="invalid-feedback">
+        Bitte gib deinen Vornamen ein.
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="inputNachname" class="form-label">Nachname</label>
+      <input type="text" class="form-control" id="inputNachname" name="nachname" required>
+      <div class="invalid-feedback">
+        Bitte gib deinen Nachnamen ein.
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputAdresse" class="form-label">Straße und Hausnummer</label>
+      <input type="text" class="form-control" id="inputAdresse" name="adresse" placeholder="Musterstraße 1" required>
+      <div class="invalid-feedback">
+        Bitte gib deine Straße und Hausnummer ein.
+      </div>
+    </div>
+    <div class="col-md-2">
+      <label for="inputPlz" class="form-label">Postleitzahl</label>
+      <input type="text" class="form-control" id="inputPlz" name="plz" required pattern="[0-9]{5}" inputmode="numeric">
+      <div class="invalid-feedback">
+        Bitte gib deine Postleitzahl ein. Diese muss aus 5 Ziffern bestehen.
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="inputStadt" class="form-label">Stadt</label>
+      <input type="text" class="form-control" id="inputStadt" name="stadt" required>
+      <div class="invalid-feedback">
+        Bitte gib deine Stadt ein.
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="inputBundesland" class="form-label">Bundesland</label>
+      <select id="inputBundesland" name="bundesland" class="form-select" required>
+        <option value="" selected disabled>Bitte wählen...</option>
+        <option value="Baden-Württemberg">Baden-Württemberg</option>
+        <option value="Bayern">Bayern</option>
+        <option value="Berlin">Berlin</option>
+        <option value="Brandenburg">Brandenburg</option>
+        <option value="Bremen">Bremen</option>
+        <option value="Hamburg">Hamburg</option>
+        <option value="Hessen">Hessen</option>
+        <option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
+        <option value="Niedersachsen">Niedersachsen</option>
+        <option value="Nordrhein-Westfalen">Nordrhein-Westfalen</option>
+        <option value="Rheinland-Pfalz">Rheinland-Pfalz</option>
+        <option value="Saarland">Saarland</option>
+        <option value="Sachsen">Sachsen</option>
+        <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+        <option value="Schleswig-Holstein">Schleswig-Holstein</option>
+        <option value="Thüringen">Thüringen</option>
+      </select>
+      <div class="invalid-feedback">
+        Bitte wähle dein Bundesland aus.
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <label for="inputBeitrag" class="form-label">Dein Beitrag</label>
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" id="inputBeitrag" name="beitrag" value="25" required min="25" step="1" aria-describedby="beitragHilfe">
+        <span class="input-group-text">€</span>
+        <div class="invalid-feedback">
+          Bitte gib deinen Wunschbeitrag als ganze Zahl ein. Der Mindestbeitrag beträgt 25€. Cent-Beträge sind nicht erlaubt.
+        </div>
+      </div>
+      <div id="beitragHilfe" class="form-text">Mindestens 25€</div>
+    </div>
+    <div class="col-md-6">
+      <label for="inputEmail" class="form-label">E-Mail Adresse</label>
+      <input type="email" class="form-control" id="inputEmail" name="email" required>
+      <div class="invalid-feedback">
+        Bitte gib deine E-Mail Adresse ein.
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="inputHandynummer" class="form-label">Handynummer</label>
+      <div class="input-group">
+        <span class="input-group-text" id="inputHandynummerVorwahl">+49</span>
+        <input type="tel" class="form-control" id="inputHandynummer" name="handynummer" pattern="1[5,6,7][1,2,3,4,5,6,7,8,9][0-9]*" aria-describedby="inputHandynummerVorwahl" required>
+        <div class="invalid-feedback">
+          Bitte gib eine gültige deutsche Handynummer ein (ohne führende Null).
+        </div>
+      </div>
+    </div>
+    <div class="col-12 mb-3">
+      <div class="card">
+        <div class="card-header bg-light">
+          <strong>SEPA Lastschriftmandat</strong>
+        </div>
+        <div class="card-body">
+          <div class="row g-3">
+            <iban-validator 
+              iban-input-id="inputIban" 
+              bic-input-id="inputBic" 
+              bank-input-id="inputBank"
+              validation-msg-id="ibanValidationMessage">
+            </iban-validator>
+            <div class="col-12">
+              <label for="inputKontoinhaber" class="form-label">Kontoinhaber</label>
+              <input type="text" class="form-control" id="inputKontoinhaber" name="kontoinhaber" required>
+              <div class="invalid-feedback">
+                Bitte gib den Namen des Kontoinhabers ein.
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="inputIban" class="form-label">IBAN</label>
+              <input type="text" class="form-control" id="inputIban" name="iban" required>
+              <div class="invalid-feedback">
+                Bitte überprüfe deinen IBAN.
+              </div>
+              <div id="ibanValidationMessage" class="form-text text-danger" style="display: none;">
+                Diese IBAN ist ungültig. Bitte überprüfe deine Eingabe.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="inputBic" class="form-label">BIC</label>
+              <input type="text" class="form-control" id="inputBic" name="bic" required>
+              <div class="invalid-feedback">
+                Bitte gib die BIC deines Bankkontos ein.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="inputBank" class="form-label">Name der Bank</label>
+              <input type="text" class="form-control" id="inputBank" name="bank" required>
+              <div class="invalid-feedback">
+                Bitte gib den Namen deiner Bank ein.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputUnterschrift">Unterschrift:</label>
+      <canvas id="inputUnterschrift" aria-described-by="unterschriftHilfe"></canvas>
+      <div id="unterschriftHilfe" class="form-text">Unterschreibe hier mit der Maus oder mit den Finger.</div>
+      <button type="button" class="btn btn-warning" onclick="clearSignature()">Löschen</button><br><br>
+      <div id="signatureError" class="invalid-feedback" style="display: none;">
+        Bitte unterschreibe das Formular.
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Ich stimme den <a href="/datenschutzerklaerung">Nutzungs- und Datenschutzbedingungen</a> zu.
+        </label>
+        <div class="invalid-feedback">
+          Du musst den Nutzungsbedingungen zustimmen, um fortzufahren.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Mitgliedschaft beantragen</button>
+      <div id="formSuccess" class="alert alert-success mt-3" style="display: none;">
+        Vielen Dank für deinen Antrag! Wir werden uns in Kürze bei dir melden.
+      </div>
+      <div id="formError" class="alert alert-danger mt-3" style="display: none;">
+        Es ist ein Fehler aufgetreten. Bitte versuche es später erneut oder kontaktiere uns direkt.
+      </div>
+    </div>
+  </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ibantools-germany/dist/build/browser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bankdata-germany/dist/build/browser.js"></script>
+<script src="/assets/js/iban-validator.js"></script>
+<script src="/assets/js/form-encryption.js"></script>
+<script type="application/javascript">
+    const canvas = document.getElementById('inputUnterschrift');
+    const signaturePad = new SignaturePad(canvas);
+    const form = document.getElementById('membershipForm');
+    const formSuccess = document.getElementById('formSuccess');
+    const formError = document.getElementById('formError');
+    const signatureError = document.getElementById('signatureError');
+    
+    // Diese Variablen werden jetzt vom Custom Element verwaltet
+
+    function resizeCanvas() {
+        const ratio = Math.max(window.devicePixelRatio || 1, 1);
+        canvas.width = canvas.offsetWidth * ratio;
+        canvas.height = canvas.offsetHeight * ratio;
+        canvas.getContext("2d").scale(ratio, ratio);
+        signaturePad.clear(); // otherwise isEmpty() might return incorrect value
+    }
+
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+
+    function clearSignature() {
+        signaturePad.clear();
+        signatureError.style.display = 'none';
+    }
+
+    // Collect form data and return as an object
+    function collectFormData() {
+        const formData = {
+            vorname: document.getElementById('inputVorname').value,
+            nachname: document.getElementById('inputNachname').value,
+            adresse: document.getElementById('inputAdresse').value,
+            plz: document.getElementById('inputPlz').value,
+            stadt: document.getElementById('inputStadt').value,
+            bundesland: document.getElementById('inputBundesland').value,
+            beitrag: document.getElementById('inputBeitrag').value,
+            email: document.getElementById('inputEmail').value,
+            handynummer: document.getElementById('inputHandynummer').value,
+            kontoinhaber: document.getElementById('inputKontoinhaber').value,
+            iban: document.getElementById('inputIban').value,
+            bic: document.getElementById('inputBic').value,
+            bank: document.getElementById('inputBank').value,
+            //unterschrift: signaturePad.isEmpty() ? '' : signaturePad.toDataURL()
+        };
+        return formData;
+    }
+
+    async function submitForm(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Reset status messages
+        formSuccess.style.display = 'none';
+        formError.style.display = 'none';
+        signatureError.style.display = 'none';
+        
+        // Validate signature
+        if (signaturePad.isEmpty()) {
+            signatureError.style.display = 'block';
+            return;
+        }
+
+        // Apply Bootstrap validation
+        form.classList.add('was-validated');
+
+        // Check form validity
+        if (!form.checkValidity()) {
+            return;
+        }
+
+        try {
+            // Collect form data
+            const formData = collectFormData();
+            
+            // Validate minimum contribution
+            if (parseInt(formData.beitrag) < 25) {
+                document.getElementById('inputBeitrag').setCustomValidity('Der Mindestbeitrag beträgt 25€');
+                form.reportValidity();
+                return;
+            }
+            
+            // Encrypt sensitive data
+            const encryptedData = await prepareEncryptedFormData(formData);
+            
+            // Send data to server
+            const response = await fetch('/api/save-membership', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(encryptedData)
+            });
+            
+            const result = await response.json();
+            
+            if (!response.ok) {
+                throw new Error(result.message || 'Server error');
+            }
+            
+            // Show success message
+            formSuccess.style.display = 'block';
+            
+            // Reset form
+            form.reset();
+            form.classList.remove('was-validated');
+            signaturePad.clear();
+            
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            formError.style.display = 'block';
+            formError.textContent = 'Fehler: ' + (error.message || 'Unbekannter Fehler');
+        }
+    }
+
+    (() => {
+        'use strict'
+
+        // Die IBAN-Validierung wird jetzt vom Custom Element übernommen
+
+        // Apply Bootstrap validation styles and handle submission
+        form.addEventListener('submit', submitForm, false);
+    })()
+</script>

@@ -1,0 +1,18 @@
+[build]
+  publish = "_site"
+  command = "make build"
+  functions = "netlify/functions"
+
+[dev]
+  functions = "netlify/functions"
+  publish = "_site"
+  port = 8888
+  targetPort = 4000
+  
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

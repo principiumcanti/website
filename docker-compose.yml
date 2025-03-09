@@ -1,0 +1,65 @@
+services:
+  proxy:
+    build: ./local-reverse-proxy
+    ports:
+      - "8888:80"
+    depends_on:
+      - web
+      - functions
+
+  web:
+    image: ruby:3.4
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      - JEKYLL_ENV=development
+      - PUBLIC_KEY=${PUBLIC_KEY}
+    env_file:
+      - .env
+    command: >
+      bash -c "apt-get update &&
+              apt-get install -y build-essential libvips42 &&
+              gem install bundler &&
+              bundle config set --local path vendor/bundle &&
+              bundle install &&
+              bundle exec jekyll serve --host 0.0.0.0 --port 4000"
+              
+  functions:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - .:/app
+    depends_on:
+      - database
+    environment:
+      - DB_HOST=database
+      - DB_USER=principium
+      - DB_PASSWORD=principium_password
+      - DB_NAME=principium_members
+      - PRIVATE_KEY=${PRIVATE_KEY}
+      - PUBLIC_KEY=${PUBLIC_KEY}
+    env_file:
+      - .env
+    command: >
+      bash -c "npm install &&
+              cd local-functions-server &&
+              npm install &&
+              npx nodemon --watch netlify --watch local-functions-server server.js"
+
+  database:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: principium_members
+      MYSQL_USER: principium
+      MYSQL_PASSWORD: principium_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db-init:/docker-entrypoint-initdb.d
+
+volumes:
+  db_data:
